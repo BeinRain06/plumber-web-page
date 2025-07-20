@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xxs: 8rem;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --size-sm: calc(12px + 0.18vw);
+  --size-regular: 18px;
+  --size-headline: calc(24px + 0.12vw);
+  --size-cater: calc(14px + 0.15vw);
+  --size-title: 32px;
+  --size-hero-title: 48px;
+
+  --primary-color: #47d9b5;
+
+  --background-navbar: #0a6d86;
+
+  --paragraph-title: #4a4a4a;
+  --paragraph-subtitle: #8f9192;
+  --paragraph-content: #494e55;
+
+  --accent-color-1: #e26655;
+  --accent-color-2: #37367d;
+  --accent-color-3: #c23dd3;
+  --accent-color-4: #178b6e;
+
+  --background-main-content-1: #ececec;
+  --background-main-content-2: #d8e9e9;
+  --background-main-content-3: #f0f0f0;
+  --background-footer: #404040;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: var(--paragraph-content);
+  font-size: 18px;
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468,
+    "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+h1 {
+  font-size: var(--size-hero-title);
+  line-height: 56px;
+}
+
+h2 {
+  font-size: var(--size-title);
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+p {
+  width: 90%;
+  line-height: 32px;
+}
+
+span {
+  display: block;
+  width: 90%;
+  font-size: var(--size-cater);
+  line-height: 26px;
+}
+
+span.small_sp {
+  width: 76%;
+  font-size: var(--size-sm);
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+}
+
+a.btn {
+  cursor: pointer;
+  display: block;
+  width: 12.3125rem;
+  padding: 0.6875rem 2.0625rem;
+  font-size: 0.92em;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.19);
+  transform: scale(1);
+  transition: all 0.2s ease;
+}
+
+a.btn_find {
+  opacity: 1;
+  color: var(--background-main-content-1);
+  background-color: var(--accent-color-2);
+}
+
+a.btn_work {
+  opacity: 1;
+  color: var(--background-main-content-1);
+  background-color: var(--accent-color-4);
+}
+
+a.btn_find:hover,
+a.btn_work:hover {
+  /*  padding: 0.5175rem 2.0025rem; */
+  opacity: 1;
+  transform: scale(0.96);
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.19);
+}
+
+.source-sans-3-600 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.roboto-flex-300 {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468,
+    "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
