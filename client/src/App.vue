@@ -1,19 +1,21 @@
 <script>
-import { ref, onMounted } from "vue";
+import { ref, reactive, onMounted } from "vue";
 import LandingPage from "./components/LandingPage.vue";
+import LandingPageOne from "./components/LandingPageOne.vue";
 export default {
-  components: { LandingPage },
+  components: { LandingPageOne },
   setup() {
     const navlinks = ref([
-      { id: "navlink-1", label: "HOME", ref: null },
-      { id: "navlink-2", label: "ABOUT", ref: null },
-      { id: "navlink-3", label: "EXPERTISE", ref: null },
-      { id: "navlink-4", label: "FEEDBACKS", ref: null },
-      { id: "navlink-5", label: "SERVICES", ref: null },
-      { id: "navlink-6", label: "CONTACT", ref: null },
+      { id: "navlink-1", label: "home", ref: null },
+      { id: "navlink-2", label: "about", ref: null },
+      { id: "navlink-3", label: "work", ref: null },
+      { id: "navlink-4", label: "contact", ref: null },
+      { id: "navlink-5", label: "Tel: + 1 00-45-69-00-007", ref: null },
     ]);
 
     const currentActiveLink = ref(null);
+
+    const currentLinkLogo = ref(null);
 
     const setElementsLinkRef = (el, i) => {
       if (el) {
@@ -32,6 +34,12 @@ export default {
     onMounted(() => {
       currentActiveLink.value = navlinks.value[0].ref;
       currentActiveLink.value.classList.add("active_navlink");
+
+      currentLinkLogo.value = navlinks.value[4].ref;
+
+      currentLinkLogo.value?.firstElementChild.firstElementChild.classList.add(
+        "display_contact_logo"
+      );
     });
 
     return {
@@ -60,14 +68,33 @@ export default {
           :ref="(el) => setElementsLinkRef(el, i)"
           @click="async (el) => handleNavLinks(el, i)"
         >
-          {{ item.label }}
+          <div class="holder_navlink inline-flex items-center justify-end">
+            <div
+              class="nav_contact_logo w-5 h-full bg-color-text-paragraph inline-block rounded-full mr-2"
+            >
+              <p class="nav_off_p_class">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16 11V8h-3V7h3V4h1v3h3v1h-3v3zm2.93 9q-2.528 0-5.184-1.266t-4.935-3.555t-3.545-4.935T4 5.07q0-.458.3-.763T5.05 4h2.473q.408 0 .712.257t.411.659L9.142 7.3q.07.42-.025.733t-.333.513L6.59 10.592q.616 1.117 1.361 2.076t1.59 1.817q.87.87 1.874 1.62q1.004.749 2.204 1.414l2.139-2.177q.244-.263.549-.347q.304-.083.674-.033l2.103.43q.408.1.662.411t.254.712v2.435q0 .45-.306.75t-.763.3M6.12 9.654l1.92-1.765q.095-.077.124-.212q.03-.135-.01-.25l-.443-2.12q-.039-.153-.135-.23T7.327 5H5.275q-.115 0-.192.077t-.077.192q.029 1.025.321 2.14t.794 2.245m8.45 8.334q1.014.502 2.16.743q1.148.24 2 .257q.115 0 .192-.077T19 18.72v-2.008q0-.153-.077-.25q-.077-.096-.23-.134l-1.85-.379q-.116-.039-.203-.01q-.086.03-.182.125zm0 0"
+                  />
+                </svg>
+              </p>
+            </div>
+            <div>{{ item.label }}</div>
+          </div>
         </li>
       </ul>
     </nav>
   </header>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
   <main class="w-full">
-    <LandingPage />
+    <LandingPageOne />
   </main>
 
   <footer>
@@ -183,7 +210,7 @@ export default {
                   <p class="mx-1 w-10">Contact us</p>
                 </div>
                 <p class="footer_contact_number pl-2 pb-4 -mt-1">
-                  003 2450 8379 / 005 7240 2108
+                  + 1 00-45-69-00-007 / + 1 00-53-72-40-408
                 </p>
               </div>
             </div>
@@ -235,9 +262,17 @@ h4.sub_links_title {
 nav {
   position: fixed;
   top: 0;
-  background-color: var(--background-navbar);
+  background-color: var(--navbar-background);
   box-shadow: 0px 0px 3px var(--accent-color-2);
   z-index: 25;
+}
+
+div.nav_contact_logo {
+  display: none;
+}
+
+div.nav_contact_logo.display_contact_logo {
+  display: inline-flex;
 }
 
 @media (min-width: 8rem) {
@@ -259,9 +294,9 @@ nav {
     font-size: var(--size-cater);
     color: var(--background-main-content-2);
     font-weight: inherit;
-    /*  text-decoration: none; */
-    transform: skew(0deg, 0deg);
-    transition: all 450ms ease-in-out;
+    border-radius: 0;
+    border: 1px solid transparent;
+    transition: all 650ms ease-in-out;
   }
 
   .navlink:hover {
@@ -270,9 +305,9 @@ nav {
 
   .navlink.active_navlink {
     color: var(--primary-color);
-    font-size: calc(16px + 0.1vw);
     font-weight: 600;
-    transform: skew(0deg, -0.5deg);
+    border-radius: 5px;
+    border-bottom: 1px solid var(--primary-color);
   }
 
   footer a {
