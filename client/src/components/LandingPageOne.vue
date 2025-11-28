@@ -110,11 +110,12 @@ export default {
     <div class="trust_wrapper">
       <div class="trust_cover">
         <h2 class="trust_main_title flex justify-center">Why Us ?</h2>
+        <!-- primary card -->
         <div class="trust_main_card">
           <div class="trust_img_one"></div>
           <div class="trust_a_context">
             <div class="trust_value">
-              <h2 class="trust_title t_under sp_b_1">Credibility</h2>
+              <h2 class="trust_title sp_b_1">Credibility</h2>
 
               <p class="trust_text text_usage sp_b_2 w-4/5">
                 Transparency over the quality and costs of the materials
@@ -129,12 +130,235 @@ export default {
             </div>
           </div>
         </div>
+        <!-- secondary cards -->
+        <div class="trust_aux_cards">
+          <div class="trust_aux_card">
+            <div class="trust_img_two"></div>
+            <div class="trust_b_context">
+              <div class="trust_aux_value">
+                <h3 class="trust_title">Standard</h3>
+                <p class="trust_text text_usage sp_t_2">
+                  Technical Installation following the worldwide standard
+                  9Blish-901 and ISO-654-Land
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="trust_aux_card">
+            <div class="trust_img_two"></div>
+            <div class="trust_b_context">
+              <div class="trust_aux_value">
+                <h3 class="trust_title">Support</h3>
+                <p class="trust_text text_usage sp_t_2">
+                  Our Enterprise supports cost of repairements when works were
+                  not achieved as planned in our agreement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testimonials -->
+    <div class="testimonials_wrapper">
+      <div class="testimonials_cover">
+        <div class="testimonials_main_title">
+          <h2 class="testimonials_title">People You May Like To Hear</h2>
+        </div>
+
+        <div class="testimonials_cards">
+          <div id="testim-1" class="testimonial_card">
+            <div class="testim_image"></div>
+            <div class="testim_context">
+              <h6 class="testim_name">Fadima</h6>
+              <p class="testim_say">
+                My husband was always busy at work, and i have to take care of
+                the construction of our house. Though fearing of the result when
+                contracting service to Dimitrio Cling. Their work was
+                industrial, and still now im grateful i find them.
+              </p>
+            </div>
+          </div>
+          <div id="testim-2" class="testimonial_card">
+            <div class="testim_image"></div>
+            <div class="testim_context">
+              <h6 class="testim_name">Clayton</h6>
+              <p class="testim_say">
+                I must say i am really impress. Just calling once and within a
+                month, the devices they installed in my new house are
+                fascinating and functionnal. I am delighted to say they value
+                efficiency
+              </p>
+            </div>
+          </div>
+          <div id="testim-3" class="testimonial_card">
+            <div class="testim_image"></div>
+            <div class="testim_context">
+              <h6 class="testim_name">Anthony</h6>
+              <p class="testim_say">
+                I have to fix all the plumbing of the overall toilets of my
+                house, i was worried since the disastrous work made by previous
+                technicians. But when comes to Dimitrio, he repaired all the
+                leaks and more over made the whole looks like a decor. They have
+                good eyes for restauration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div class="service_wrapper">
+      <div class="service_cover">
+        <div class="service_main_title">
+          <h2 class="service_title">OUR CAPACITY</h2>
+        </div>
+        <div class="service_cards">
+          <div class="service_card">
+            <div class="service_icon w-full flex flex-row justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M21.45 7.5H9.99A2 2 0 0 0 8.06 6h-1a2 2 0 0 0-1.93 1.5H2.55a.5.5 0 0 0-.5.5a.51.51 0 0 0 .5.5h2.58A2 2 0 0 0 7.06 10h1a2 2 0 0 0 1.93-1.5h11.46a.5.5 0 0 0 0-1M8.06 9h-1a1.006 1.006 0 0 1-1-.98V8a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2m13.39 6.5h-2.58a2 2 0 0 0-1.93-1.5h-1a2 2 0 0 0-1.93 1.5H2.55a.5.5 0 0 0 0 1h11.46a2 2 0 0 0 1.93 1.5h1a2 2 0 0 0 1.93-1.5h2.58a.5.5 0 0 0 .5-.5a.51.51 0 0 0-.5-.5m-3.51.5a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1.006 1.006 0 0 1 1 .98Z"
+                />
+              </svg>
+            </div>
+            <div class="service_context">
+              <h6 class="service_title">New House</h6>
+              <p class="service_attend">Install Home with modern devices</p>
+            </div>
+          </div>
+          <div class="service_card">
+            <div class="service_icon w-full flex flex-row justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M4.415 7.22a.76.76 0 0 0-.35.64v9.67a1.54 1.54 0 0 0 .88 1.38l5.96 2.82a2.62 2.62 0 0 0 2.19 0l5.96-2.82a1.54 1.54 0 0 0 .88-1.38V7.86a.74.74 0 0 0-.36-.64l-2.23-1.15v-1a1 1 0 0 0-.15-.52l-1.33-2.16a.75.75 0 0 0-1.28 0L13.3 4.5l-.66-1.07a.76.76 0 0 0-.64-.35a.79.79 0 0 0-.64.36l-.65 1.06L9.4 2.39a.75.75 0 0 0-1.28 0L6.805 4.55a1 1 0 0 0-.15.52v1Zm12.93-.01l.7.35l-.7.33Zm-2.44-3.43h.64l.5.81h-1.64Zm1.44 1.81v2.77l-.61.29V5.59Zm-2.23 0h.62v3.53l-.62.3Zm-5.67-1.81h.64l.5.81h-1.64Zm1.44 1.81v3.82l-.61-.29V5.59Zm-2.23 0h.62v3.06l-.62-.29Zm-1 1.62v.68l-.7-.33ZM5.365 18a.52.52 0 0 1-.3-.47V8.24l6.43 3.04v9.59Zm6.13-7.83l-.61-.29V6.64h.61Zm-.32-4.53l.51-.82h.62l.51.82Zm1.94 1v3.25l-.62.29V6.64ZM12.5 20.88v-9.59l6.44-3.05v9.29a.51.51 0 0 1-.31.47Z"
+                />
+              </svg>
+            </div>
+            <div class="service_context">
+              <h6 class="service_title">Pull</h6>
+              <p class="service_attend">
+                Plan and Construct Pull easy to keep up
+              </p>
+            </div>
+          </div>
+          <div class="service_card">
+            <div class="service_icon w-full flex flex-row justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12.6 20.936h-1.3a.88.88 0 0 1-.852-.654l-.774-2.833l-2.5 1.435a.886.886 0 0 1-1.06-.138l-.925-.919a.884.884 0 0 1-.143-1.066l1.469-2.545l-.006-.016l-2.787-.747a.88.88 0 0 1-.654-.851V11.3a.88.88 0 0 1 .652-.85l2.839-.777L5.12 7.171a.885.885 0 0 1 .141-1.062l.918-.918a.885.885 0 0 1 1.061-.142l2.552 1.465h.012l.745-2.79a.88.88 0 0 1 .851-.655h1.3a.88.88 0 0 1 .852.655l.762 2.838l2.509-1.441a.885.885 0 0 1 1.059.138l.926.919a.88.88 0 0 1 .141 1.067l-1.466 2.532l.008.022l2.786.746a.88.88 0 0 1 .653.851v1.3a.88.88 0 0 1-.654.852l-2.837.774l1.439 2.505a.88.88 0 0 1-.141 1.063l-.917.917a.89.89 0 0 1-1.063.141l-2.539-1.462l-.018.014l-.745 2.785a.885.885 0 0 1-.855.651m-1.21-1h1.119l.738-2.756a.89.89 0 0 1 .528-.592l.134-.052a.87.87 0 0 1 .76.057l2.51 1.445l.789-.789l-1.423-2.478a.88.88 0 0 1-.048-.78l.052-.125a.88.88 0 0 1 .584-.51l2.8-.749v-1.12l-2.755-.737a.89.89 0 0 1-.592-.529l-.052-.132a.88.88 0 0 1 .057-.763l1.449-2.508l-.8-.79l-2.48 1.425a.88.88 0 0 1-.772.052l-.115-.047a.89.89 0 0 1-.518-.588l-.748-2.806h-1.115l-.738 2.762a.88.88 0 0 1-.539.6l-.12.045a.87.87 0 0 1-.751-.058L6.822 5.962l-.789.789l1.422 2.476a.89.89 0 0 1 .046.785l-.051.12a.88.88 0 0 1-.579.5l-2.8.758v1.121l2.757.738a.89.89 0 0 1 .591.525l.048.121a.87.87 0 0 1-.055.77l-1.454 2.516l.8.791l2.47-1.419a.88.88 0 0 1 .787-.045l.106.044a.87.87 0 0 1 .526.591Zm-1.64-2.454h.008Zm-.15-.061h.007Zm4.655-10.885"
+                />
+                <path
+                  fill="currentColor"
+                  d="M12 15a3 3 0 1 1 3-3a3 3 0 0 1-3 3m0-5a2 2 0 1 0 2 2a2 2 0 0 0-2-2"
+                />
+              </svg>
+            </div>
+            <div class="service_context">
+              <h6 class="service_title">Sinking</h6>
+              <p class="service_attend">
+                Build Drilling and external outfit concrete
+              </p>
+            </div>
+          </div>
+          <div class="service_card">
+            <div class="service_icon w-full flex flex-row justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 21.919a1.45 1.45 0 0 1-.791-.232l-1.564-1.021a.47.47 0 0 0-.439-.028l-1.776.829a1.47 1.47 0 0 1-1.4-.087a1.21 1.21 0 0 1-.581-1.02V3.641a1.22 1.22 0 0 1 .584-1.021a1.47 1.47 0 0 1 1.4-.087l1.775.829a.47.47 0 0 0 .439-.026l1.563-1.023a1.46 1.46 0 0 1 1.581 0l1.564 1.022a.47.47 0 0 0 .44.026l1.775-.829a1.46 1.46 0 0 1 1.4.087a1.22 1.22 0 0 1 .581 1.021v16.72a1.22 1.22 0 0 1-.581 1.02a1.46 1.46 0 0 1-1.4.087l-1.77-.828a.47.47 0 0 0-.441.027l-1.564 1.021a1.45 1.45 0 0 1-.795.232M9.4 19.6a1.44 1.44 0 0 1 .79.234l1.564 1.02a.46.46 0 0 0 .487 0l1.565-1.021a1.46 1.46 0 0 1 1.41-.095l1.774.828a.46.46 0 0 0 .437-.024a.22.22 0 0 0 .118-.177V3.641a.22.22 0 0 0-.118-.177a.46.46 0 0 0-.437-.025l-1.775.829a1.46 1.46 0 0 1-1.409-.095l-1.563-1.022a.47.47 0 0 0-.486 0l-1.565 1.021a1.47 1.47 0 0 1-1.41.1l-1.775-.833a.46.46 0 0 0-.437.025a.22.22 0 0 0-.118.177V20.36a.22.22 0 0 0 .118.177a.47.47 0 0 0 .437.024l1.776-.829A1.5 1.5 0 0 1 9.4 19.6"
+                />
+                <path
+                  fill="currentColor"
+                  d="M15.046 7.4H8.954a.5.5 0 0 1 0-1h6.092a.5.5 0 0 1 0 1m0 3.553H8.954a.5.5 0 0 1 0-1h6.092a.5.5 0 0 1 0 1M12 14.5H8.954a.5.5 0 0 1 0-1H12a.5.5 0 0 1 0 1"
+                />
+              </svg>
+            </div>
+            <div class="service_context">
+              <h6 class="service_title">Repairements</h6>
+              <p class="service_attend">
+                Fix, repair, adapt systems, in sinking installation
+              </p>
+            </div>
+          </div>
+          <div class="service_card">
+            <div class="service_icon w-full flex flex-row justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M14.76 3.065a6.17 6.17 0 0 0-6.11 5.58a6.159 6.159 0 1 0 6.71 6.71a6.159 6.159 0 0 0-.6-12.29m-5.53 16.87A5.166 5.166 0 0 1 5.24 11.5l7.27 7.26a5.15 5.15 0 0 1-3.28 1.175m3.99-1.88l-7.27-7.27a5.165 5.165 0 0 1 7.27 7.27m2.15-3.71a6.12 6.12 0 0 0-5.72-5.71a5.157 5.157 0 1 1 5.72 5.71"
+                />
+              </svg>
+            </div>
+            <div class="service_context">
+              <h6 class="service_title">Support</h6>
+              <p class="service_attend">
+                Call our center at anytime of the day
+              </p>
+            </div>
+          </div>
+          <div class="service_card">
+            <div class="service_icon w-full flex flex-row justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M2.336 9.685a9.934 9.934 0 0 0 11.256 12.123A9.93 9.93 0 0 0 20.708 7.23A10.05 10.05 0 0 0 12 2.072a.507.507 0 0 0-.5.5v4.2a.5.5 0 0 0 1 0v-4.2l-.5.5a8.935 8.935 0 0 1 8.433 11.892a8.938 8.938 0 0 1-13.965 4.063A9.04 9.04 0 0 1 3.3 9.951c.142-.627-.822-.9-.964-.266"
+                />
+                <path
+                  fill="currentColor"
+                  d="M7.4 8.117a.5.5 0 0 1 .707-.707l4.243 4.242a.5.5 0 0 1-.707.707Z"
+                />
+              </svg>
+            </div>
+            <div class="service_context">
+              <h6 class="service_title">Consulting</h6>
+              <p class="service_attend">
+                Mind and plan the water powering of your devices right in
+                advance
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="preview_redirect_link sp_r_1 flex justify-end pb-[2.025rem]">
+        <a href="#" class="btn_link">Our Work</a>
       </div>
     </div>
   </div>
 
-  <!-- testimonials -->
-  <!-- services -->
   <!-- breathing-section -->
   <!-- reinforcement-value -->
 </template>
@@ -144,6 +368,8 @@ export default {
 
 /* local utilities */
 .t_under {
+  width: max-content;
+  padding-bottom: 2px;
   border-bottom-width: 1px;
   border-style: solid;
   border-color: inherit;
@@ -159,6 +385,10 @@ export default {
 
 .sp_r_1 {
   padding-right: 1.35rem;
+}
+
+.sp_t_2 {
+  margin-top: 1.35rem;
 }
 
 /* <Hero-Section> */
@@ -296,22 +526,23 @@ h1.core_value_main {
 }
 
 /* <Trust-Section> */
-
 .trust_cover {
   width: 100%;
+  padding: 0 0 1.35rem;
   height: auto;
   background-color: var(--color-accent-two);
 }
 
 .trust_main_title {
   width: 100%;
-  padding: 1.35rem 3.7125rem;
+  padding: 3.6rem 3.7125rem 3.0375rem;
   background-color: var(--color-accent-two);
 }
 
 .trust_main_card {
   width: 100%;
-  height: 18.9rem;
+  height: 21.6rem;
+  padding-bottom: 3.6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -334,5 +565,150 @@ h1.core_value_main {
 
 .trust_cta {
   padding-top: 1.4625rem;
+}
+
+.trust_aux_cards {
+  width: 100%;
+  height: 20.7rem;
+  padding-left: 2.925rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2.025rem;
+}
+
+.trust_aux_card {
+  flex-basis: 50%;
+  height: 100%;
+  padding: 4.05rem 0 2.925rem;
+  display: flex;
+  flex-direction: row;
+  /* gap: 1.35rem; */
+  gap: 1.40625rem;
+}
+
+.trust_img_two {
+  width: 36.8%;
+  height: 100%;
+  background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
+    no-repeat;
+  background-size: cover;
+}
+
+.trust_b_context {
+  width: 58.2%;
+  padding-top: 0.45rem;
+}
+
+/* <Testimonials-Section> */
+.testimonials_wrapper {
+  width: 100%;
+  height: auto;
+  background-color: rgba(207, 210, 212, 0.843);
+  color: rgb(41, 40, 43);
+}
+
+.testimonials_main_title {
+  width: 100%;
+  padding-top: 2.7rem;
+  color: var(--navbar-background);
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials_cards {
+  width: 100%;
+  max-width: 59.85rem;
+  padding: 3.24rem 0 5.85rem;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, minmax(21.825rem, 1fr));
+  grid-auto-rows: 13.05rem;
+  gap: 0.72rem;
+}
+
+.testimonial_card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.125rem;
+}
+
+.testim_image {
+  width: 40%;
+  height: 12.6rem;
+  background: url("../assets/new-images/female_pixabay.jpg") left center
+    no-repeat;
+  background-size: cover;
+}
+
+#testim-2 .testim_image {
+  background: url("../assets/new-images/GlassesShpo_pixabay.jpg") right 46%
+    center no-repeat;
+  background-size: cover;
+}
+
+#testim-3 .testim_image {
+  background: url("../assets/new-images/Victoria_pixabay.jpg") left center
+    no-repeat;
+  background-size: cover;
+}
+
+.testim_context {
+  width: 60%;
+  padding: 0.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.testim_name {
+  color: var(--color-accent-one);
+}
+
+/* <Service-Section> */
+
+.service_cover {
+  padding: 4.045rem 4.725rem;
+}
+
+.service_main_title {
+  width: 100%;
+  padding-top: 2.475rem 0 2.925rem;
+  display: flex;
+  justify-content: center;
+}
+
+.service_cards {
+  width: 100%;
+  /*  max-width: 59.85rem; */
+  max-width: 65.475rem;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, minmax(16.2rem, 20.025rem));
+  grid-auto-rows: 13.05rem;
+  gap: 1.35rem;
+}
+
+.service_icon {
+  color: var(--bg-aux-btn);
+}
+
+.service_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.125rem;
+}
+
+.service_context {
+  width: max(88%, 13.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.575rem;
 }
 </style>

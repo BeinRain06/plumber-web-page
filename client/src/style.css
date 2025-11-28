@@ -39,17 +39,17 @@
   --background-footer: #404040;
 
   /*color-scheme-2*/
-  --navbar-background: #0a3c86cc;
+  --navbar-background: rgba(10, 60, 134, 0.8);
   --primary-background: rgb(241, 242, 243);
   --aux-background: rgb(67, 67, 82);
 
-  --color-gray-text: #cfd2d4;
+  --color-gray-text: rgb(207, 210, 212);
   --color-blue-title: rgb(79, 41, 182);
 
   --bg-main-btn: rgb(102, 74, 13);
   --bg-aux-btn: rgb(155, 114, 25);
 
-  --color-accent-one: #2a292c;
+  --color-accent-one: rgb(42, 41, 44);
   --color-accent-two: rgb(80, 72, 97);
 
   /* base-evolution number(Ev_N) Calculation
@@ -126,6 +126,17 @@ p.loc_img {
   margin-top: 4px;
 }
 
+p.testim_say {
+  font-size: 0.7875rem;
+  font-weight: 350;
+}
+
+p.service_attend {
+  font-size: 0.945rem;
+  font-weight: 300;
+  text-align: center;
+}
+
 span {
   display: block;
   width: 90%;
@@ -169,7 +180,7 @@ a.btn.btn_wrap {
 a.btn_link {
   cursor: pointer;
   width: max-content;
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   padding-bottom: 0.3375rem;
   color: inherit;
   letter-spacing: 1px;
