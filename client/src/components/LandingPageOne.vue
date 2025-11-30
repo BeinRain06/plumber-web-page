@@ -22,7 +22,7 @@ export default {
             </h4>
           </div>
           <div class="hook_cta">
-            <a href="#" class="btn btn_contact">Contact Us</a>
+            <a href="#" class="btn btn_contact">Make a Call</a>
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@ export default {
               </p>
             </div>
             <div class="trust_cta">
-              <a href="#" class="btn btn_wrap btn_contact">Contact Us</a>
+              <a href="#" class="btn btn_wrap btn_contact">Make a Call</a>
             </div>
           </div>
         </div>
@@ -357,14 +357,80 @@ export default {
         <a href="#" class="btn_link">Our Work</a>
       </div>
     </div>
+    <!-- breathing-section -->
+    <div class="breathing_wrapper">
+      <div class="breathing_cover">
+        <div class="breathing_cast_shadow"></div>
+        <div class="breathing_context">
+          <div class="breathing_value">
+            <p class="breathing_suggestion">
+              Decide What To Do Next, After A Call
+            </p>
+            <div
+              class="holder_call_number inline-flex items-center justify-end pl-[0.45rem] pt-[1.0125rem]"
+            >
+              <div
+                class="breathe_call_logo w-10 h-full bg-color-text-paragraph inline-block rounded-full mr-2"
+              >
+                <div class="breathe_icon_class flex justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M16 11V8h-3V7h3V4h1v3h3v1h-3v3zm2.93 9q-2.528 0-5.184-1.266t-4.935-3.555t-3.545-4.935T4 5.07q0-.458.3-.763T5.05 4h2.473q.408 0 .712.257t.411.659L9.142 7.3q.07.42-.025.733t-.333.513L6.59 10.592q.616 1.117 1.361 2.076t1.59 1.817q.87.87 1.874 1.62q1.004.749 2.204 1.414l2.139-2.177q.244-.263.549-.347q.304-.083.674-.033l2.103.43q.408.1.662.411t.254.712v2.435q0 .45-.306.75t-.763.3M6.12 9.654l1.92-1.765q.095-.077.124-.212q.03-.135-.01-.25l-.443-2.12q-.039-.153-.135-.23T7.327 5H5.275q-.115 0-.192.077t-.077.192q.029 1.025.321 2.14t.794 2.245m8.45 8.334q1.014.502 2.16.743q1.148.24 2 .257q.115 0 .192-.077T19 18.72v-2.008q0-.153-.077-.25q-.077-.096-.23-.134l-1.85-.379q-.116-.039-.203-.01q-.086.03-.182.125zm0 0"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="transition duration-300 ease-linear cursor-pointer hover:text-[var(--bg-aux-btn)]"
+              >
+                <h2>Tel : + 1 00-45-69-00-007</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- reinforcement-value-section -->
+    <div class="reinforcement_wrapper">
+      <div class="reinforcement_cover">
+        <div class="reinforcement_image"></div>
+        <div class="mission_context">
+          <div class="mission_value">
+            <h2 class="mission_title t_under sp_b_1 mt-[0.9rem]">
+              Engineer Your Solution
+            </h2>
+            <p class="mission_text text_usage sp_b_2 w-4/5">
+              Materials based on the quality and potentiality of new devices in
+              the market.
+            </p>
+
+            <p class="mission-text text_usage">
+              Intuitively displaying innovation overall design building
+            </p>
+          </div>
+          <div class="mission_cta">
+            <a href="#" class="btn_link">Our Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- breathing-section -->
-  <!-- reinforcement-value -->
+  <!-- farewell-section -->
 </template>
 
 <style scoped>
 @import "tailwindcss";
+
+@theme {
+  --color-call: rgb(155, 114, 25);
+}
 
 /* local utilities */
 .t_under {
@@ -445,14 +511,16 @@ h1.core_value_main {
 }
 
 /* <Mission-Section> */
-.mission_wrapper {
+.mission_wrapper,
+.reinforcement_wrapper {
   width: 100%;
   height: 36rem;
   padding: 8.55rem 0 4.05rem;
   background-color: var(--aux-background);
 }
 
-.mission_cover {
+.mission_cover,
+.reinforcement_cover {
   width: 100%;
   padding-left: 2.925rem;
   display: flex;
@@ -460,10 +528,17 @@ h1.core_value_main {
   gap: 2.025rem;
 }
 
-.mission_image {
+.mission_image,
+.reinforcement_image {
   width: 41.2%;
   height: 20.7rem;
   background: url("../assets/new-images/ReinhardThrainer-pixabay.jpg") left
+    center no-repeat;
+  background-size: 94.4%;
+}
+
+.reinforcement_image {
+  background: url("../assets/new-images/Gypsum-partition_pixabay.jpg") left
     center no-repeat;
   background-size: 94.4%;
 }
@@ -710,5 +785,44 @@ h1.core_value_main {
   flex-direction: column;
   align-items: center;
   gap: 1.575rem;
+}
+
+/* <Breathing-Section> */
+.breathing_wrapper {
+  width: 100%;
+}
+
+.breathing_cover {
+  position: relative;
+  width: 100%;
+  height: 37.8rem;
+  background: url("../assets/new-images/Trương-Hoàng-Huy-Ngân_pixabay.jpg") left
+    center no-repeat;
+  background-size: 100%;
+}
+
+.breathing_cast_shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.35);
+}
+
+.breathing_context {
+  position: relative;
+  top: 6.975rem;
+  right: 1.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  word-wrap: break-word;
+}
+
+.breathing_value {
+  width: 54.2%;
+  height: 18.9rem;
+  padding: 1.8rem 1.35rem 1.35rem;
+  background-color: rgb(0, 0, 0, 0.35);
 }
 </style>
