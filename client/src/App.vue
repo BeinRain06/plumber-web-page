@@ -68,7 +68,9 @@ export default {
           :ref="(el) => setElementsLinkRef(el, i)"
           @click="async (el) => handleNavLinks(el, i)"
         >
-          <div class="holder_navlink inline-flex items-center justify-end">
+          <div
+            class="holder_navlink inline-flex items-center justify-end tansition-all duration-300 ease-in-out hover:text-[var(--primary-color)]"
+          >
             <div
               class="nav_contact_logo w-5 h-full bg-color-text-paragraph inline-block rounded-full mr-2"
             >
@@ -86,7 +88,9 @@ export default {
                 </svg>
               </p>
             </div>
-            <div>{{ item.label }}</div>
+            <div>
+              <p class="nav_p_link">{{ item.label }}</p>
+            </div>
           </div>
         </li>
       </ul>
@@ -113,9 +117,9 @@ export default {
             <div
               class="footer_expand_links w-full flex flex-col items-start gap-4"
             >
-              <a>about me</a>
-              <a>assistance</a>
-              <a>learn more</a>
+              <a class="link_footer">about me</a>
+              <a class="link_footer">assistance</a>
+              <a class="link_footer">learn more</a>
             </div>
           </div>
           <div class="footer_space w-1/4 flex flex-col items-start gap-8">
@@ -123,9 +127,9 @@ export default {
             <div
               class="footer_expand_links w-full flex flex-col items-start gap-4"
             >
-              <a>quotation</a>
-              <a>advisory equipments</a>
-              <a>water plan drawings</a>
+              <a class="link_footer">quotation</a>
+              <a class="link_footer">advisory equipments</a>
+              <a class="link_footer">water plan drawings</a>
             </div>
           </div>
           <div class="footer_space w-1/4 flex flex-col items-start gap-8">
@@ -133,9 +137,9 @@ export default {
             <div
               class="footer_expand_links w-full flex flex-col items-start gap-4"
             >
-              <a>repairments</a>
-              <a>new installation</a>
-              <a>renovation</a>
+              <a class="link_footer">repairments</a>
+              <a class="link_footer">new installation</a>
+              <a class="link_footer">renovation</a>
             </div>
           </div>
           <div class="footer_space w-1/4 flex flex-col items-start gap-8">
@@ -143,8 +147,8 @@ export default {
             <div
               class="footer_expand_links w-full flex flex-col items-start gap-4"
             >
-              <a>xyzdimitrio@gmail.com</a>
-              <a>learn more</a>
+              <a class="link_footer">xyzdimitrio@gmail.com</a>
+              <a class="link_footer">learn more</a>
               <div
                 class="social_media px-[0.5em] py-2 w-full flex flex-row items-center gap-5"
               >
@@ -189,7 +193,7 @@ export default {
                 </i>
               </div>
               <div
-                class="adress_tel w-full sm:w-max flex flex-col items-center sm:items-start gap-1"
+                class="adress_tel w-full flex flex-col items-center sm:items-start gap-1"
               >
                 <div
                   class="footer_contact_label w-40 m-0 p-0 flex flex-row items-center"
@@ -207,9 +211,11 @@ export default {
                       />
                     </svg>
                   </p>
-                  <p class="mx-1 w-10">Contact us</p>
+                  <p class="mx-1 w-full pb-[0.45rem]">Contact us</p>
                 </div>
-                <p class="footer_contact_number pl-2 pb-4 -mt-1">
+                <p
+                  class="footer_contact_number w-full pl-2 pb-4 -mt-1 break-words"
+                >
                   + 1 00-45-69-00-007 / + 1 00-53-72-40-408
                 </p>
               </div>
@@ -255,8 +261,9 @@ ul {
 }
 
 h4.sub_links_title {
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
+  font-size: 26px;
+  font-size: calc(1.4625rem + 0.1vw);
+  letter-spacing: 1px;
 }
 
 nav {
@@ -275,7 +282,7 @@ div.nav_contact_logo.display_contact_logo {
   display: inline-flex;
 }
 
-@media (min-width: 8rem) {
+@media (min-width: 9.9rem) {
   .footer_terms_use p.logo_copyright {
     width: 40%;
   }
@@ -320,6 +327,7 @@ div.nav_contact_logo.display_contact_logo {
     background-color: var(--background-footer);
     font-family: "Source Sans 3", sans-serif;
     font-weight: 300;
+    padding-right: 1.125rem;
   }
 
   .footer_logo_brand {
@@ -333,10 +341,6 @@ div.nav_contact_logo.display_contact_logo {
 
   .footer_links .adress_tel {
     font-size: calc(12px + 0.12vw);
-  }
-
-  .adress_tel p {
-    width: max-content;
   }
 
   .footer_terms_use p.logo_copyright {

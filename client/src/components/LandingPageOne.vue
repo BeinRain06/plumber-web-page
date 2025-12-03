@@ -12,16 +12,16 @@ export default {
       <div class="hero_context">
         <div class="hook_container">
           <div class="hook_value">
-            <h1 class="core_value_main">
+            <h1 class="core_value_main sp_tb_1 font-semibold">
               Install Water Powering Devices For Your Building, on new Worldwide
               Standard
             </h1>
-            <h4 class="core_value_sub">
+            <h4 class="core_value_sub sp_tb_2">
               Work with Real professional and get unique installation that take
               from the best norm in the world
             </h4>
           </div>
-          <div class="hook_cta">
+          <div class="hook_cta sp_b_3">
             <a href="#" class="btn btn_contact">Make a Call</a>
           </div>
         </div>
@@ -32,29 +32,31 @@ export default {
     <div class="mission_wrapper">
       <div class="mission_cover">
         <div class="mission_image"></div>
-        <div class="mission_context">
+        <div class="mission_context w-full md:w-[54.6%]">
           <div class="mission_value">
             <h2 class="mission_title t_under sp_b_1">Mission</h2>
-            <p class="mission_text text_usage sp_b_2 w-4/5">
+            <p class="mission_text lh_1 sp_b_2 w-4/5 xl:w-11/12">
               Our Entreprize regard on standard are very strict on construction
             </p>
 
-            <p class="mission-text text_usage">
+            <p class="mission-text lh_1 w-4/5 xl:w-11/12">
               Dimitrio Cling With over 7 Years in the field, focus are technical
               efficienccy and installation. With a team of 60+ technicians
               trained to equip household and industries with modern devices.
             </p>
           </div>
-          <div class="mission_cta">
+          <div class="mission_cta sp_t_3">
             <a href="#" class="btn_link">Career</a>
           </div>
         </div>
       </div>
     </div>
     <!-- preview-projects page -->
-    <div class="projects_preview_wrapper">
+    <div class="projects_preview_wrapper w-full pt-[1.575rem] pb-[4.05rem]">
       <div class="projects_preview_cover">
-        <div class="projects_preview_title flex justify-center">
+        <div
+          class="projects_preview_title w-full py-[2.475rem] px-[3.7125rem] flex justify-center"
+        >
           <h2 class="preview_title">Projects Build On Trust</h2>
         </div>
         <div class="projects_preview_cards">
@@ -108,24 +110,28 @@ export default {
     </div>
     <!-- trust -->
     <div class="trust_wrapper">
-      <div class="trust_cover">
-        <h2 class="trust_main_title flex justify-center">Why Us ?</h2>
+      <div class="trust_cover w-full pb-[1.35rem] bg-[var(--color-accent-two)]">
+        <h2
+          class="trust_main_title w-full pt-[3.6rem] px-[3.7125rem] pb-[3.0375rem] mx-auto flex justify-center bg-[var(--color-accent-two)]"
+        >
+          Why Us ?
+        </h2>
         <!-- primary card -->
-        <div class="trust_main_card">
+        <div class="trust_main_card flex flex-row justify-center">
           <div class="trust_img_one"></div>
-          <div class="trust_a_context">
+          <div class="trust_a_context flex flex-col">
             <div class="trust_value">
               <h2 class="trust_title sp_b_1">Credibility</h2>
 
-              <p class="trust_text text_usage sp_b_2 w-4/5">
+              <p class="trust_text lh_1 sp_b_2 w-4/5">
                 Transparency over the quality and costs of the materials
               </p>
 
-              <p class="trust_text text_usage">
+              <p class="trust_text lh_1">
                 Adapt Demands to a budget that align with safetiness
               </p>
             </div>
-            <div class="trust_cta">
+            <div class="trust_cta sp_t_2">
               <a href="#" class="btn btn_wrap btn_contact">Make a Call</a>
             </div>
           </div>
@@ -137,7 +143,7 @@ export default {
             <div class="trust_b_context">
               <div class="trust_aux_value">
                 <h3 class="trust_title">Standard</h3>
-                <p class="trust_text text_usage sp_t_2">
+                <p class="trust_text lh_1 sp_t_2">
                   Technical Installation following the worldwide standard
                   9Blish-901 and ISO-654-Land
                 </p>
@@ -149,7 +155,7 @@ export default {
             <div class="trust_b_context">
               <div class="trust_aux_value">
                 <h3 class="trust_title">Support</h3>
-                <p class="trust_text text_usage sp_t_2">
+                <p class="trust_text lh_1 sp_t_2">
                   Our Enterprise supports cost of repairements when works were
                   not achieved as planned in our agreement.
                 </p>
@@ -162,7 +168,9 @@ export default {
     <!-- testimonials -->
     <div class="testimonials_wrapper">
       <div class="testimonials_cover">
-        <div class="testimonials_main_title">
+        <div
+          class="testimonials_main_title w-full sp_t_31 flex justify-center text-[var(--navbar-background)]"
+        >
           <h2 class="testimonials_title">People You May Like To Hear</h2>
         </div>
 
@@ -171,7 +179,7 @@ export default {
             <div class="testim_image"></div>
             <div class="testim_context">
               <h6 class="testim_name">Fadima</h6>
-              <p class="testim_say">
+              <p class="testim_say small_ft">
                 My husband was always busy at work, and i have to take care of
                 the construction of our house. Though fearing of the result when
                 contracting service to Dimitrio Cling. Their work was
@@ -183,7 +191,7 @@ export default {
             <div class="testim_image"></div>
             <div class="testim_context">
               <h6 class="testim_name">Clayton</h6>
-              <p class="testim_say">
+              <p class="testim_say small_ft">
                 I must say i am really impress. Just calling once and within a
                 month, the devices they installed in my new house are
                 fascinating and functionnal. I am delighted to say they value
@@ -195,12 +203,11 @@ export default {
             <div class="testim_image"></div>
             <div class="testim_context">
               <h6 class="testim_name">Anthony</h6>
-              <p class="testim_say">
+              <p class="testim_say small_ft">
                 I have to fix all the plumbing of the overall toilets of my
                 house, i was worried since the disastrous work made by previous
-                technicians. But when comes to Dimitrio, he repaired all the
-                leaks and more over made the whole looks like a decor. They have
-                good eyes for restauration.
+                technicians. But when comes to Dimitrio, they repaired all the
+                leaks and their equipments stand like a decor.
               </p>
             </div>
           </div>
@@ -209,8 +216,10 @@ export default {
     </div>
     <!-- services -->
     <div class="service_wrapper">
-      <div class="service_cover">
-        <div class="service_main_title">
+      <div class="service_cover sp_tb_3">
+        <div
+          class="service_main_title w-full pt-[2.475rem] pb-[2.925rem] flex justify-center"
+        >
           <h2 class="service_title">OUR CAPACITY</h2>
         </div>
         <div class="service_cards">
@@ -230,7 +239,9 @@ export default {
             </div>
             <div class="service_context">
               <h6 class="service_title">New House</h6>
-              <p class="service_attend">Install Home with modern devices</p>
+              <p class="service_attend light_ft">
+                Install Home with modern devices
+              </p>
             </div>
           </div>
           <div class="service_card">
@@ -249,7 +260,7 @@ export default {
             </div>
             <div class="service_context">
               <h6 class="service_title">Pull</h6>
-              <p class="service_attend">
+              <p class="service_attend light_ft">
                 Plan and Construct Pull easy to keep up
               </p>
             </div>
@@ -274,7 +285,7 @@ export default {
             </div>
             <div class="service_context">
               <h6 class="service_title">Sinking</h6>
-              <p class="service_attend">
+              <p class="service_attend light_ft">
                 Build Drilling and external outfit concrete
               </p>
             </div>
@@ -299,7 +310,7 @@ export default {
             </div>
             <div class="service_context">
               <h6 class="service_title">Repairements</h6>
-              <p class="service_attend">
+              <p class="service_attend light_ft">
                 Fix, repair, adapt systems, in sinking installation
               </p>
             </div>
@@ -320,7 +331,7 @@ export default {
             </div>
             <div class="service_context">
               <h6 class="service_title">Support</h6>
-              <p class="service_attend">
+              <p class="service_attend light_ft">
                 Call our center at anytime of the day
               </p>
             </div>
@@ -345,7 +356,7 @@ export default {
             </div>
             <div class="service_context">
               <h6 class="service_title">Consulting</h6>
-              <p class="service_attend">
+              <p class="service_attend light_ft">
                 Mind and plan the water powering of your devices right in
                 advance
               </p>
@@ -358,14 +369,12 @@ export default {
       </div>
     </div>
     <!-- breathing-section -->
-    <div class="breathing_wrapper">
+    <div class="breathing_wrapper w-full">
       <div class="breathing_cover">
         <div class="breathing_cast_shadow"></div>
         <div class="breathing_context">
           <div class="breathing_value">
-            <p class="breathing_suggestion">
-              Decide What To Do Next, After A Call
-            </p>
+            <p class="large_ft">Decide What To Do Next, After A Call</p>
             <div
               class="holder_call_number inline-flex items-center justify-end pl-[0.45rem] pt-[1.0125rem]"
             >
@@ -402,27 +411,38 @@ export default {
         <div class="reinforcement_image"></div>
         <div class="mission_context">
           <div class="mission_value">
-            <h2 class="mission_title t_under sp_b_1 mt-[0.9rem]">
+            <h2 class="mission_title t_under sp_b_1 mt-[1.35rem]">
               Engineer Your Solution
             </h2>
-            <p class="mission_text text_usage sp_b_2 w-4/5">
+            <p class="mission_text lh_1 sp_b_2 w-4/5 xl:w-11/12">
               Materials based on the quality and potentiality of new devices in
               the market.
             </p>
 
-            <p class="mission-text text_usage">
-              Intuitively displaying innovation overall design building
+            <p class="mission-text lh_1 w-4/5 xl:w-11/12">
+              Intuitively displaying innovation overall on the building design
             </p>
           </div>
-          <div class="mission_cta">
+          <div class="mission_cta sp_t_3">
             <a href="#" class="btn_link">Our Work</a>
           </div>
         </div>
       </div>
     </div>
+    <!-- farewell-section -->
+    <div class="farewell wrapper">
+      <div class="farewell_cover">
+        <div
+          class="farewell_context w-4/5 lg:w-3/5 h-full my-0 mx-auto flex justify-center items-center"
+        >
+          <h1 class="farewell_value text-center break-words">
+            Water Good Powering is no more just equipments, it's also a trigger
+            to confident Joy and happiness when back home.
+          </h1>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- farewell-section -->
 </template>
 
 <style scoped>
@@ -449,6 +469,10 @@ export default {
   margin-bottom: 1.35rem;
 }
 
+.sp_b_3 {
+  margin-bottom: 2.0255rem;
+}
+
 .sp_r_1 {
   padding-right: 1.35rem;
 }
@@ -457,151 +481,641 @@ export default {
   margin-top: 1.35rem;
 }
 
-/* <Hero-Section> */
-.hero_wrapper {
-  position: relative;
-  top: 42px;
-  scroll-margin-top: 0;
-  width: 100%;
-  height: 80vh;
-  padding: 5.85rem 0 4.05rem;
-  margin: 0;
-
-  /* background: linear-gradient(
-    97.39deg,
-    rgb(54, 56, 57) 25.12%,
-    rgb(33, 37, 41) 82.16%
-  ); */
-
-  background: linear-gradient(
-    97.39deg,
-    rgb(43, 53, 58) 25.12%,
-    rgb(42, 51, 56) 82.16%
-  );
-  display: flex;
-  flex-direction: row;
-  gap: 0.45rem;
-  border-top: 1px solid transparent;
+.sp_t_3 {
+  margin-top: 2.7rem;
 }
 
-.hero_context {
-  width: 56.4%;
-  padding-left: 2.925rem;
-}
-
-.hero_image {
-  width: 43.6%;
-  height: 100%;
-  padding: 0.675rem 2.025rem;
-  background: url("../assets/new-images/indosup-pixebay-1.png") right center
-    no-repeat;
-  background-size: 94.4%;
-  border: none;
-  outline: none;
-}
-
-h1.core_value_main {
-  padding-bottom: 0.45rem;
-  margin-bottom: 0.9rem;
-  font-weight: bold;
-}
-
-.hook_cta {
-  margin-top: 1.575rem;
-}
-
-/* <Mission-Section> */
-.mission_wrapper,
-.reinforcement_wrapper {
-  width: 100%;
-  height: 36rem;
-  padding: 8.55rem 0 4.05rem;
-  background-color: var(--aux-background);
-}
-
-.mission_cover,
-.reinforcement_cover {
-  width: 100%;
-  padding-left: 2.925rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2.025rem;
-}
-
-.mission_image,
-.reinforcement_image {
-  width: 41.2%;
-  height: 20.7rem;
-  background: url("../assets/new-images/ReinhardThrainer-pixabay.jpg") left
-    center no-repeat;
-  background-size: 94.4%;
-}
-
-.reinforcement_image {
-  background: url("../assets/new-images/Gypsum-partition_pixabay.jpg") left
-    center no-repeat;
-  background-size: 94.4%;
-}
-
-.mission_context {
-  width: 54.6%;
-}
-
-.mission_cta {
+.sp_t_31 {
   padding-top: 2.7rem;
 }
 
-/* <Projects-Preview-Section> */
-.projects_preview_wrapper {
-  width: 100%;
-  height: auto;
-  padding: 1.575rem 0 4.05rem;
+.sp_tb_1 {
+  padding-bottom: 0.45rem;
+  margin-bottom: 0.9rem;
 }
 
-.projects_preview_title {
-  width: 100%;
-  padding: 2.475rem 3.7125rem;
+.sp_tb_2 {
+  padding: 0.675rem 0 1.0125rem;
 }
 
-.projects_preview_cards {
-  width: 86.2%;
-  padding: 5.4rem 2.925rem 7.2rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(15.075rem, 1fr));
-  grid-auto-rows: 16.65rem;
-  gap: 1.35rem;
+.sp_tb_3 {
+  padding: 4.045rem 4.725rem;
 }
 
-.project_preview_card {
-  width: 100%;
-  padding: 1.35rem 2.7rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.9rem;
+.lh_1 {
+  line-height: 1.665rem;
 }
 
-.preview_image {
-  width: 100%;
-  height: 100%;
-  background: url("../assets/new-images/PeterH-pixabay.jpg") left center
-    no-repeat;
-  background-size: cover;
+@media (min-width: 9.9rem) {
+  .hero_wrapper {
+    position: relative;
+    top: 42px;
+    scroll-margin-top: 0;
+    width: 100%;
+    height: 90vh;
+    padding: 5.85rem 0 4.05rem;
+    margin: 0;
+    background: linear-gradient(
+      97.39deg,
+      rgb(43, 53, 58) 25.12%,
+      rgb(42, 51, 56) 82.16%
+    );
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid transparent;
+  }
+
+  .hero_context {
+    width: 96%;
+    padding-left: 0;
+  }
+
+  .hero_image {
+    width: 100%;
+    height: 100%;
+    padding: 0.675rem 2.025rem;
+    background: url("../assets/new-images/indosup-pixebay-1.png") right center
+      no-repeat;
+    background-size: 100%;
+    border: none;
+    outline: none;
+  }
+
+  /* <Mission-Section> */
+  .mission_wrapper,
+  .reinforcement_wrapper {
+    width: 100%;
+    height: 36rem;
+    padding: 8.55rem 0 4.05rem;
+    background-color: var(--aux-background);
+  }
+
+  .mission_cover,
+  .reinforcement_cover {
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.575rem;
+  }
+
+  .mission_image,
+  .reinforcement_image {
+    width: 100%;
+    height: 16.65rem;
+    background: url("../assets/new-images/ReinhardThrainer-pixabay.jpg") left
+      center no-repeat;
+    background-size: 94.4%;
+  }
+
+  .reinforcement_image {
+    background: url("../assets/new-images/Gypsum-partition_pixabay.jpg") left
+      center no-repeat;
+    background-size: 94.4%;
+  }
+
+  .projects_preview_cards {
+    width: 96%;
+    padding: 5.4rem 2.925rem 7.2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: min(17.55rem, 1fr);
+    grid-auto-rows: 16.65rem;
+    gap: 1.35rem;
+  }
+
+  /* <Projects-Preview-Section> */
+  .project_preview_card {
+    width: 100%;
+    padding: 1.35rem 2.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .preview_image {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/new-images/PeterH-pixabay.jpg") left center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .preview_location {
+    width: 100%;
+    height: 12.2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 0.81rem;
+  }
+
+  /* <Trust-Section> */
+  .trust_main_card {
+    width: 100%;
+    height: 21.6rem;
+    padding-bottom: 3.6rem;
+    gap: 1.35rem;
+  }
+
+  .trust_img_one {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6);
+    background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
+      no-repeat;
+    background-size: 100%;
+  }
+
+  .trust_aux_cards {
+    width: 100%;
+    height: 20.7rem;
+    padding-left: 2.925rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.025rem;
+  }
+
+  .trust_aux_card {
+    flex-basis: 100%;
+    height: 100%;
+    padding: 4.05rem 0 2.925rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.35rem; */
+    gap: 1.40625rem;
+  }
+
+  .trust_img_two {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .trust_b_context {
+    width: 100%;
+    padding-top: 0.45rem;
+  }
+
+  /* <Testimonials-Section> */
+  .testimonials_wrapper {
+    width: 100%;
+    height: auto;
+    background-color: rgba(207, 210, 212, 0.843);
+    color: rgb(41, 40, 43);
+  }
+
+  .testimonials_main_title {
+    width: 100%;
+    padding-top: 2.7rem;
+    color: var(--navbar-background);
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonials_cards {
+    width: 100%;
+    max-width: 59.85rem;
+    padding: 3.24rem 0 5.85rem;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, minmax(16.65rem, 1fr));
+    grid-auto-rows: 13.05rem;
+    gap: 0.72rem;
+  }
+
+  .testimonial_card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.125rem;
+  }
+
+  .testim_image {
+    width: 40%;
+    height: 12.6rem;
+    background: url("../assets/new-images/female_pixabay.jpg") left center
+      no-repeat;
+    background-size: cover;
+  }
+
+  #testim-2 .testim_image {
+    background: url("../assets/new-images/GlassesShpo_pixabay.jpg") right 46%
+      center no-repeat;
+    background-size: cover;
+  }
+
+  #testim-3 .testim_image {
+    background: url("../assets/new-images/Victoria_pixabay.jpg") left center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .testim_context {
+    width: 100%;
+    padding: 0.45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+
+  .testim_name {
+    color: var(--color-accent-one);
+  }
+
+  /* <Service-Section> */
+  .service_cards {
+    width: 100%;
+    max-width: 65.475rem;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: max(16.2rem, 1fr);
+    grid-auto-rows: 13.05rem;
+    gap: 1.35rem;
+  }
+
+  .service_icon {
+    color: var(--bg-aux-btn);
+  }
+
+  .service_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.125rem;
+  }
+
+  .service_context {
+    width: max(100%, 13.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.575rem;
+  }
+
+  /* <Breathing-Section> */
+
+  .breathing_cover {
+    position: relative;
+    width: 100%;
+    height: 28.8rem;
+    background: url("../assets/new-images/Trương-Hoàng-Huy-Ngân_pixabay.jpg")
+      left center no-repeat;
+    background-size: 100%;
+  }
+
+  .breathing_cast_shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.35);
+  }
+  .breathing_context {
+    position: relative;
+    top: 4.275rem;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    word-wrap: break-word;
+  }
+
+  .breathing_value {
+    width: 84.2%;
+    height: 18.9rem;
+    margin: 0 auto;
+    padding: 1.8rem 1.35rem 1.35rem;
+    background-color: rgb(0, 0, 0, 0.35);
+  }
+
+  /* <Farewell-Section> */
+
+  .farewell_cover {
+    width: 100%;
+    height: 25.65rem;
+    background: url("../assets/new-images/chien-than_pixabay.jpg") left center
+        no-repeat,
+      linear-gradient(97.39deg, rgb(54, 56, 57) 25.12%, rgb(33, 37, 41) 82.16%);
+    background-size: 100%;
+    backdrop-filter: sepia(70%);
+  }
+
+  h1.farewell_value {
+    --size-hero-title: calc(2.6775rem + 0.15vw);
+    line-height: 4.8375rem;
+    color: var(--color-blue-title);
+  }
 }
 
-.preview_location {
-  width: 100%;
-  height: 12.2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  align-items: center;
-  gap: 0.81rem;
+@media (min-width: 47.925rem) {
+  .sp_b_3 {
+    margin-bottom: 1.575rem;
+  }
+
+  .sp_tb_3 {
+    padding: 2.025rem 3.15rem;
+  }
+
+  .lh_1 {
+    line-height: 1.665rem;
+  }
+
+  .hero_wrapper {
+    /* display: flex; */
+    flex-direction: row;
+    height: auto;
+    gap: 0.45rem;
+    padding: 5.85rem 0 4.05rem;
+  }
+
+  .hero_context {
+    --size-hero-title: calc(2.52rem + 0.15vw);
+    --size-h4: calc(1.125rem + 0.1vw);
+
+    width: 58.4%;
+    padding-left: 2.025rem;
+  }
+
+  .hero_image {
+    width: 40.6%;
+    aspect-ratio: 16/16;
+    padding: 0.675rem 1.35rem;
+    /* background: url("../assets/new-images/indosup-pixebay-1.png") right center
+      no-repeat; */
+    background-size: 94.4%;
+    /*  border: none;
+    outline: none; */
+  }
+
+  /* <Mission-Section> */
+  .mission_wrapper,
+  .reinforcement_wrapper {
+    padding: 8.55rem 0 4.05rem;
+  }
+
+  .mission_cover,
+  .reinforcement_cover {
+    width: 100%;
+    padding-left: 2.025rem;
+    flex-direction: row;
+    gap: 1.575rem;
+  }
+
+  .mission_image,
+  .reinforcement_image {
+    width: 41.2%;
+    height: 20.7rem;
+  }
+
+  .projects_preview_cards {
+    width: 96.2%;
+    padding: 5.4rem 2.925rem 7.2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10.575rem, 1fr));
+    grid-auto-rows: 13.5rem;
+    gap: 1.125rem;
+  }
+
+  /* <Trust-Section> */
+  .trust_main_card {
+    width: 100%;
+    height: 21.6rem;
+    padding-bottom: 2.025rem;
+    gap: 1.35rem;
+  }
+
+  .trust_img_one {
+    width: 34.6%;
+    height: 100%;
+    transform: scale(0.92);
+    background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
+      no-repeat;
+    background-size: 100%;
+  }
+
+  .trust_aux_cards {
+    width: 100%;
+    height: 20.7rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+  }
+
+  .trust_aux_card {
+    flex-basis: 50%;
+    height: 100%;
+    padding: 1.125rem 0.675rem 2.925rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.35rem;
+  }
+
+  .trust_img_two {
+    width: 36.8%;
+    height: 75%;
+    background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
+      no-repeat;
+    background-size: 100%;
+  }
+
+  .trust_b_context {
+    width: 58.2%;
+    padding-top: 0.45rem;
+  }
+
+  /* <Testimonials-Section> */
+  .testimonials_cards {
+    width: 100%;
+    max-width: 59.85rem;
+    padding: 3.42rem 0.45rem 2.475rem;
+    grid-template-columns: repeat(2, minmax(21.825rem, 1fr));
+    grid-auto-rows: 15.3rem;
+    gap: 0.72rem;
+  }
+
+  .testim_image {
+    width: 40%;
+    height: 12.6rem;
+  }
+
+  .testim_context {
+    width: 60%;
+    padding: 0.45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+
+  .service_cards {
+    width: 100%;
+    max-width: 65.475rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(13.05rem, 20.025rem));
+    grid-auto-rows: 13.05rem;
+    gap: 1.35rem;
+  }
+
+  .service_context {
+    width: max(88%, 13.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.575rem;
+  }
+
+  /* <Breathing-Section> */
+
+  .breathing_cover {
+    width: 100%;
+    height: 37.8rem;
+  }
+
+  .breathing_context {
+    position: relative;
+    top: 6.975rem;
+    right: 1.8rem;
+    width: 100%;
+  }
+
+  .breathing_value {
+    width: 68.2%;
+    height: 18.9rem;
+    padding: 1.8rem 1.35rem 1.35rem;
+    margin: 0;
+    background-color: rgb(0, 0, 0, 0.35);
+  }
+}
+
+@media (min-width: 79.875rem) {
+  .sp_tb_3 {
+    padding: 4.045rem 4.725rem;
+  }
+
+  /* <Hero-Section> */
+  .hero_wrapper {
+    top: 42px;
+    padding: 5.85rem 0 4.05rem;
+    margin: 0;
+    height: max-content;
+  }
+
+  .hero_context {
+    width: 56.4%;
+    padding-left: 2.925rem;
+  }
+
+  .hero_image {
+    width: 43.6%;
+    aspect-ratio: 16/9;
+    /*  height: 100%; */
+    padding: 0.675rem 2.025rem;
+    /*     background: url("../assets/new-images/indosup-pixebay-1.png") right center
+      no-repeat; */
+    background-size: 94.4%;
+    /* border: none;
+    outline: none; */
+  }
+
+  /* <Mission-Section> */
+  .mission_wrapper,
+  .reinforcement_wrapper {
+    padding: 8.55rem 0 4.05rem;
+  }
+
+  .mission_cover,
+  .reinforcement_cover {
+    padding-left: 2.925rem;
+    gap: 2.025rem;
+  }
+
+  .mission_image,
+  .reinforcement_image {
+    width: 41.2%;
+    height: 20.7rem;
+    background-size: 94.4%;
+  }
+
+  /* <Projects-Preview-Section> */
+  .projects_preview_cards {
+    width: 86.2%;
+    padding: 5.4rem 2.925rem 7.2rem;
+    grid-template-columns: repeat(3, minmax(15.075rem, 1fr));
+    grid-auto-rows: 16.65rem;
+    gap: 1.35rem;
+  }
+
+  /* <Trust-Section> */
+  .trust_main_card {
+    padding-bottom: 3.6rem;
+  }
+
+  .trust_img_one {
+    width: 34.6%;
+    height: 100%;
+    transform: scale(0.92);
+    background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
+      no-repeat;
+    background-size: 100%;
+  }
+
+  .trust_aux_cards {
+    width: 100%;
+    height: 20.7rem;
+    padding-left: 2.925rem;
+    gap: 2.025rem;
+  }
+
+  .trust_aux_card {
+    padding: 4.05rem 0 2.925rem;
+    gap: 1.40625rem;
+  }
+
+  .trust_img_two {
+    width: 36.8%;
+    height: 100%;
+    background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .trust_b_context {
+    width: 58.2%;
+    padding-top: 0.45rem;
+  }
+
+  /* <Testimonials-Section> */
+  .testimonials_cards {
+    padding: 3.24rem 0 5.85rem;
+    grid-auto-rows: 13.05rem;
+  }
+
+  /* <Breathing-Section> */
+  .breathing_value {
+    width: 54.2%;
+    height: 18.9rem;
+  }
+
+  /* <Farewell-Section> */
+  .farewell_cover {
+    width: 100%;
+    height: 29.25rem;
+  }
 }
 
 /* <Trust-Section> */
-.trust_cover {
+
+/* .trust_cover {
   width: 100%;
   padding: 0 0 1.35rem;
   height: auto;
@@ -612,217 +1126,9 @@ h1.core_value_main {
   width: 100%;
   padding: 3.6rem 3.7125rem 3.0375rem;
   background-color: var(--color-accent-two);
-}
+} */
 
-.trust_main_card {
-  width: 100%;
-  height: 21.6rem;
-  padding-bottom: 3.6rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1.35rem;
-}
-
-.trust_img_one {
-  width: 34.6%;
-  height: 100%;
-  transform: scale(0.92);
-  background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
-    no-repeat;
-  background-size: 100%;
-}
-
-.trust_a_context {
-  display: flex;
-  flex-direction: column;
-}
-
-.trust_cta {
+/* .trust_cta {
   padding-top: 1.4625rem;
-}
-
-.trust_aux_cards {
-  width: 100%;
-  height: 20.7rem;
-  padding-left: 2.925rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2.025rem;
-}
-
-.trust_aux_card {
-  flex-basis: 50%;
-  height: 100%;
-  padding: 4.05rem 0 2.925rem;
-  display: flex;
-  flex-direction: row;
-  /* gap: 1.35rem; */
-  gap: 1.40625rem;
-}
-
-.trust_img_two {
-  width: 36.8%;
-  height: 100%;
-  background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
-    no-repeat;
-  background-size: cover;
-}
-
-.trust_b_context {
-  width: 58.2%;
-  padding-top: 0.45rem;
-}
-
-/* <Testimonials-Section> */
-.testimonials_wrapper {
-  width: 100%;
-  height: auto;
-  background-color: rgba(207, 210, 212, 0.843);
-  color: rgb(41, 40, 43);
-}
-
-.testimonials_main_title {
-  width: 100%;
-  padding-top: 2.7rem;
-  color: var(--navbar-background);
-  display: flex;
-  justify-content: center;
-}
-
-.testimonials_cards {
-  width: 100%;
-  max-width: 59.85rem;
-  padding: 3.24rem 0 5.85rem;
-  margin: 0 auto;
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(2, minmax(21.825rem, 1fr));
-  grid-auto-rows: 13.05rem;
-  gap: 0.72rem;
-}
-
-.testimonial_card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 1.125rem;
-}
-
-.testim_image {
-  width: 40%;
-  height: 12.6rem;
-  background: url("../assets/new-images/female_pixabay.jpg") left center
-    no-repeat;
-  background-size: cover;
-}
-
-#testim-2 .testim_image {
-  background: url("../assets/new-images/GlassesShpo_pixabay.jpg") right 46%
-    center no-repeat;
-  background-size: cover;
-}
-
-#testim-3 .testim_image {
-  background: url("../assets/new-images/Victoria_pixabay.jpg") left center
-    no-repeat;
-  background-size: cover;
-}
-
-.testim_context {
-  width: 60%;
-  padding: 0.45rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.125rem;
-}
-
-.testim_name {
-  color: var(--color-accent-one);
-}
-
-/* <Service-Section> */
-
-.service_cover {
-  padding: 4.045rem 4.725rem;
-}
-
-.service_main_title {
-  width: 100%;
-  padding-top: 2.475rem 0 2.925rem;
-  display: flex;
-  justify-content: center;
-}
-
-.service_cards {
-  width: 100%;
-  /*  max-width: 59.85rem; */
-  max-width: 65.475rem;
-  margin: 0 auto;
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(3, minmax(16.2rem, 20.025rem));
-  grid-auto-rows: 13.05rem;
-  gap: 1.35rem;
-}
-
-.service_icon {
-  color: var(--bg-aux-btn);
-}
-
-.service_card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.125rem;
-}
-
-.service_context {
-  width: max(88%, 13.5rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.575rem;
-}
-
-/* <Breathing-Section> */
-.breathing_wrapper {
-  width: 100%;
-}
-
-.breathing_cover {
-  position: relative;
-  width: 100%;
-  height: 37.8rem;
-  background: url("../assets/new-images/Trương-Hoàng-Huy-Ngân_pixabay.jpg") left
-    center no-repeat;
-  background-size: 100%;
-}
-
-.breathing_cast_shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0, 0.35);
-}
-
-.breathing_context {
-  position: relative;
-  top: 6.975rem;
-  right: 1.8rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  word-wrap: break-word;
-}
-
-.breathing_value {
-  width: 54.2%;
-  height: 18.9rem;
-  padding: 1.8rem 1.35rem 1.35rem;
-  background-color: rgb(0, 0, 0, 0.35);
-}
+} */
 </style>
