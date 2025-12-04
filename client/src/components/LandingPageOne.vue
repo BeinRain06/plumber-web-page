@@ -10,9 +10,13 @@ export default {
     <!-- hero page -->
     <div class="hero_wrapper">
       <div class="hero_context">
-        <div class="hook_container">
-          <div class="hook_value">
-            <h1 class="core_value_main sp_tb_1 font-semibold">
+        <div
+          class="hook_container flex flex-col justify-center md:justify-start"
+        >
+          <div class="hook_value w-4/5 md:w-full mx-auto md:mx-0">
+            <h1
+              class="core_value_main sp_tb_1 font-semibold text-center md:text-left"
+            >
               Install Water Powering Devices For Your Building, on new Worldwide
               Standard
             </h1>
@@ -33,19 +37,27 @@ export default {
       <div class="mission_cover">
         <div class="mission_image"></div>
         <div class="mission_context w-full md:w-[54.6%]">
-          <div class="mission_value">
+          <div
+            class="mission_value flex flex-col items-center md:items-start justify-center md:justify-start"
+          >
             <h2 class="mission_title t_under sp_b_1">Mission</h2>
-            <p class="mission_text lh_1 sp_b_2 w-4/5 xl:w-11/12">
+            <p
+              class="mission_text lh_1 sp_b_2 w-4/5 xl:w-11/12 text-center md:text-left"
+            >
               Our Entreprize regard on standard are very strict on construction
             </p>
 
-            <p class="mission-text lh_1 w-4/5 xl:w-11/12">
+            <p
+              class="mission-text lh_1 w-4/5 xl:w-11/12 text-center md:text-left"
+            >
               Dimitrio Cling With over 7 Years in the field, focus are technical
               efficienccy and installation. With a team of 60+ technicians
               trained to equip household and industries with modern devices.
             </p>
           </div>
-          <div class="mission_cta sp_t_3">
+          <div
+            class="mission_cta sp_t_3 w-full flex justify-center md:justify-start"
+          >
             <a href="#" class="btn_link">Career</a>
           </div>
         </div>
@@ -117,17 +129,23 @@ export default {
           Why Us ?
         </h2>
         <!-- primary card -->
-        <div class="trust_main_card flex flex-row justify-center">
+        <div
+          class="trust_main_card flex flex-col justify-center items-center md:flex-row md:items-start"
+        >
           <div class="trust_img_one"></div>
-          <div class="trust_a_context flex flex-col">
-            <div class="trust_value">
-              <h2 class="trust_title sp_b_1">Credibility</h2>
+          <div
+            class="trust_a_context flex flex-col items-center md:items-start"
+          >
+            <div class="trust_value w-full flex flex-col">
+              <h2 class="trust_title sp_b_1 self-center md:self-start">
+                Credibility
+              </h2>
 
-              <p class="trust_text lh_1 sp_b_2 w-4/5">
+              <p class="trust_text lh_1 sp_b_2 w-4/5 mx-auto md:mx-0">
                 Transparency over the quality and costs of the materials
               </p>
 
-              <p class="trust_text lh_1">
+              <p class="trust_text lh_1 w-4/5 mx-auto md:mx-0">
                 Adapt Demands to a budget that align with safetiness
               </p>
             </div>
@@ -373,10 +391,12 @@ export default {
       <div class="breathing_cover">
         <div class="breathing_cast_shadow"></div>
         <div class="breathing_context">
-          <div class="breathing_value">
+          <div
+            class="breathing_value flex flex-col justify-center md:justify-start"
+          >
             <p class="large_ft">Decide What To Do Next, After A Call</p>
             <div
-              class="holder_call_number inline-flex items-center justify-end pl-[0.45rem] pt-[1.0125rem]"
+              class="holder_call_number inline-flex items-center justify-center break-words md:justify-end md:pl-[0.45rem] pt-[1.0125rem]"
             >
               <div
                 class="breathe_call_logo w-10 h-full bg-color-text-paragraph inline-block rounded-full mr-2"
@@ -409,21 +429,29 @@ export default {
     <div class="reinforcement_wrapper">
       <div class="reinforcement_cover">
         <div class="reinforcement_image"></div>
-        <div class="mission_context">
-          <div class="mission_value">
+        <div class="mission_context w-full md:w-[54.6%]">
+          <div
+            class="mission_value flex flex-col items-center md:items-start justify-center md:justify-start"
+          >
             <h2 class="mission_title t_under sp_b_1 mt-[1.35rem]">
               Engineer Your Solution
             </h2>
-            <p class="mission_text lh_1 sp_b_2 w-4/5 xl:w-11/12">
+            <p
+              class="mission_text lh_1 sp_b_2 w-4/5 xl:w-11/12 text-center md:text-left"
+            >
               Materials based on the quality and potentiality of new devices in
               the market.
             </p>
 
-            <p class="mission-text lh_1 w-4/5 xl:w-11/12">
+            <p
+              class="mission-text lh_1 w-4/5 xl:w-11/12 text-center md:text-left"
+            >
               Intuitively displaying innovation overall on the building design
             </p>
           </div>
-          <div class="mission_cta sp_t_3">
+          <div
+            class="mission_cta sp_t_3 w-full flex justify-center md:justify-start"
+          >
             <a href="#" class="btn_link">Our Work</a>
           </div>
         </div>
@@ -507,13 +535,21 @@ export default {
 }
 
 @media (min-width: 9.9rem) {
+  .trust_cta {
+    display: none;
+  }
+
+  .sp_b_3 {
+    margin: 2.025rem auto 0;
+  }
+
   .hero_wrapper {
     position: relative;
     top: 42px;
     scroll-margin-top: 0;
     width: 100%;
-    height: 90vh;
-    padding: 5.85rem 0 4.05rem;
+    height: 110vh;
+    padding: 3.6rem 0 3.15rem;
     margin: 0;
     background: linear-gradient(
       97.39deg,
@@ -523,29 +559,41 @@ export default {
     display: flex;
     flex-direction: row;
     border-top: 1px solid transparent;
+    justify-content: center;
   }
 
   .hero_context {
     width: 96%;
+    margin: 0 auto;
     padding-left: 0;
+    backdrop-filter: grayscale(42%);
+    position: absolute;
+    z-index: 3;
   }
 
   .hero_image {
+    position: relative;
+    left: 2.5%;
     width: 100%;
     height: 100%;
     padding: 0.675rem 2.025rem;
     background: url("../assets/new-images/indosup-pixebay-1.png") right center
       no-repeat;
     background-size: 100%;
+    /* backdrop-filter: hue-rotate(350deg); */
+    backdrop-filter: grayscale(34%);
     border: none;
     outline: none;
+    transform: scale(0.9);
+    clip-path: xywh(0 5px 100% 75% round 15% 0);
+    z-index: 0;
   }
 
   /* <Mission-Section> */
   .mission_wrapper,
   .reinforcement_wrapper {
     width: 100%;
-    height: 36rem;
+    height: 47.25rem;
     padding: 8.55rem 0 4.05rem;
     background-color: var(--aux-background);
   }
@@ -566,6 +614,8 @@ export default {
     background: url("../assets/new-images/ReinhardThrainer-pixabay.jpg") left
       center no-repeat;
     background-size: 94.4%;
+    position: relative;
+    left: 2.5%;
   }
 
   .reinforcement_image {
@@ -574,6 +624,7 @@ export default {
     background-size: 94.4%;
   }
 
+  /* <Projects-Preview-Section> */
   .projects_preview_cards {
     width: 96%;
     padding: 5.4rem 2.925rem 7.2rem;
@@ -584,7 +635,6 @@ export default {
     gap: 1.35rem;
   }
 
-  /* <Projects-Preview-Section> */
   .project_preview_card {
     width: 100%;
     padding: 1.35rem 2.7rem;
@@ -615,15 +665,17 @@ export default {
   /* <Trust-Section> */
   .trust_main_card {
     width: 100%;
-    height: 21.6rem;
+    height: auto;
     padding-bottom: 3.6rem;
     gap: 1.35rem;
   }
 
   .trust_img_one {
-    width: 100%;
-    height: 100%;
-    transform: scale(0.6);
+    width: 50%;
+    height: auto;
+    aspect-ratio: 16/9;
+
+    /* transform: scale(0.8); */
     background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
       no-repeat;
     background-size: 100%;
@@ -631,34 +683,39 @@ export default {
 
   .trust_aux_cards {
     width: 100%;
-    height: 20.7rem;
-    padding-left: 2.925rem;
+    height: auto;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2.025rem;
   }
 
   .trust_aux_card {
     flex-basis: 100%;
-    height: 100%;
-    padding: 4.05rem 0 2.925rem;
+    height: 50%;
+    padding: 1.125rem 1.125rem 2.025rem;
     display: flex;
     flex-direction: column;
     /* gap: 1.35rem; */
+    align-items: center;
     gap: 1.40625rem;
   }
 
   .trust_img_two {
-    width: 100%;
-    height: 100%;
+    width: 48%;
+    height: auto;
+    aspect-ratio: 16/9;
     background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
       no-repeat;
     background-size: cover;
   }
 
   .trust_b_context {
-    width: 100%;
+    width: 90%;
     padding-top: 0.45rem;
+    margin: 0 auto;
+    text-align: center;
   }
 
   /* <Testimonials-Section> */
@@ -684,7 +741,7 @@ export default {
     margin: 0 auto;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(2, minmax(16.65rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16.65rem, 1fr));
     grid-auto-rows: 13.05rem;
     gap: 0.72rem;
   }
@@ -785,7 +842,7 @@ export default {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     word-wrap: break-word;
   }
 
@@ -810,15 +867,19 @@ export default {
   }
 
   h1.farewell_value {
-    --size-hero-title: calc(2.6775rem + 0.15vw);
-    line-height: 4.8375rem;
+    --size-hero-title: calc(1.35rem + 0.15vw);
+    line-height: 2.25rem;
     color: var(--color-blue-title);
   }
 }
 
 @media (min-width: 47.925rem) {
+  .trust_cta {
+    display: inline-block;
+  }
+
   .sp_b_3 {
-    margin-bottom: 1.575rem;
+    margin: 0 0 1.575rem 0;
   }
 
   .sp_tb_3 {
@@ -831,7 +892,10 @@ export default {
 
   .hero_wrapper {
     /* display: flex; */
+    top: 42px;
+    height: 90vh;
     flex-direction: row;
+    justify-content: flex-start;
     height: auto;
     gap: 0.45rem;
     padding: 5.85rem 0 4.05rem;
@@ -840,25 +904,30 @@ export default {
   .hero_context {
     --size-hero-title: calc(2.52rem + 0.15vw);
     --size-h4: calc(1.125rem + 0.1vw);
-
+    backdrop-filter: none;
+    position: relative;
     width: 58.4%;
     padding-left: 2.025rem;
+    margin: 0;
   }
 
   .hero_image {
+    position: relative;
+    left: 0;
     width: 40.6%;
+    height: auto;
     aspect-ratio: 16/16;
     padding: 0.675rem 1.35rem;
-    /* background: url("../assets/new-images/indosup-pixebay-1.png") right center
-      no-repeat; */
     background-size: 94.4%;
-    /*  border: none;
-    outline: none; */
+    transform: scale(1);
+    clip-path: none;
+    backdrop-filter: none;
   }
 
   /* <Mission-Section> */
   .mission_wrapper,
   .reinforcement_wrapper {
+    height: 43.65rem;
     padding: 8.55rem 0 4.05rem;
   }
 
@@ -874,6 +943,8 @@ export default {
   .reinforcement_image {
     width: 41.2%;
     height: 20.7rem;
+    position: relative;
+    left: 0;
   }
 
   .projects_preview_cards {
@@ -897,10 +968,8 @@ export default {
   .trust_img_one {
     width: 34.6%;
     height: 100%;
+    aspect-ratio: unset;
     transform: scale(0.92);
-    background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
-      no-repeat;
-    background-size: 100%;
   }
 
   .trust_aux_cards {
@@ -909,6 +978,7 @@ export default {
     padding-left: 0;
     display: flex;
     flex-direction: row;
+    align-items: start;
     gap: 1.8rem;
   }
 
@@ -916,14 +986,15 @@ export default {
     flex-basis: 50%;
     height: 100%;
     padding: 1.125rem 0.675rem 2.925rem;
-    display: flex;
     flex-direction: row;
+    align-items: start;
     gap: 1.35rem;
   }
 
   .trust_img_two {
     width: 36.8%;
     height: 75%;
+    aspect-ratio: unset;
     background: url("../assets/new-images/BobDmyt-pixabay.jpg") left center
       no-repeat;
     background-size: 100%;
@@ -932,6 +1003,8 @@ export default {
   .trust_b_context {
     width: 58.2%;
     padding-top: 0.45rem;
+    margin: 0;
+    text-align: left;
   }
 
   /* <Testimonials-Section> */
@@ -957,6 +1030,7 @@ export default {
     gap: 1.125rem;
   }
 
+  /* <Service-Section> */
   .service_cards {
     width: 100%;
     max-width: 65.475rem;
@@ -986,6 +1060,7 @@ export default {
     top: 6.975rem;
     right: 1.8rem;
     width: 100%;
+    align-items: flex-end;
   }
 
   .breathing_value {
@@ -994,6 +1069,13 @@ export default {
     padding: 1.8rem 1.35rem 1.35rem;
     margin: 0;
     background-color: rgb(0, 0, 0, 0.35);
+  }
+
+  /* <Farewell-section> */
+  h1.farewell_value {
+    --size-hero-title: calc(2.6775rem + 0.15vw);
+    line-height: 4.8375rem;
+    color: var(--color-blue-title);
   }
 }
 
