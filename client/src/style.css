@@ -24,38 +24,18 @@
   --size-main-title: calc(1.9125rem + 0.1vw);
   --size-hero-title: calc(2.6775rem + 0.15vw);
 
-  /*color-scheme-1*/
-  --primary-color: #47d9b5;
+  /* color-scheme-1 */
+  --color-title: hsl(256, 63%, 44%);
+  --primary-background: hsl(256, 69%, 8%);
+  --color-text: hsl(256, 12%, 90%);
+  --aux-background: hsl(259, 15%, 33%);
+  --highlight-text: hsl(41, 72%, 35%);
 
-  --background-navbar: #0a6d86;
+  --navbar-background: hsla(216, 86%, 28%, 0.8);
 
-  --paragraph-title: #4a4a4a;
-  --paragraph-subtitle: #8f9192;
-  --paragraph-content: #494e55;
-
-  --accent-color-1: #e26655;
-  --accent-color-2: #37367d;
-  --accent-color-3: #c23dd3;
-  --accent-color-4: #178b6e;
-
-  --background-main-content-1: #ececec;
-  --background-main-content-2: #d8e9e9;
-  --background-main-content-3: #f0f0f0;
-  --background-footer: #404040;
-
-  /*color-scheme-2*/
-  --navbar-background: rgba(10, 60, 134, 0.8);
-  --primary-background: rgb(241, 242, 243);
-  --aux-background: rgb(67, 67, 82);
-
-  --color-gray-text: rgb(207, 210, 212);
-  --color-blue-title: rgb(79, 41, 182);
-
-  --bg-main-btn: rgb(102, 74, 13);
-  --bg-aux-btn: rgb(155, 114, 25);
-
-  --color-accent-one: rgb(42, 41, 44);
-  --color-accent-two: rgb(80, 72, 97);
+  --accent-color-one: hsl(41, 48%, 25%);
+  --accent-color-two: hsl(256, 38%, 85%);
+  --accent-color-three: hsl(41, 72%, 52%);
 
   /* base-evolution number(Ev_N) Calculation
   1rem = 16px;
@@ -72,9 +52,8 @@ body {
   width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
-  /*  color: var(--paragraph-content); */
-  color: var(--color-gray-text);
-  background-color: var(--color-accent-one);
+  color: var(--color-text);
+  background-color: var(--primary-background);
 
   font-size: var(--size-regular);
   /* base-evolution number Ev_N = 1.125/5 = 0.225rem */
@@ -92,7 +71,7 @@ h1 {
   /* 1 Ev_N = 0.225rem; */
   font-size: var(--size-hero-title);
   line-height: 3.7125rem; /* 16.5 Ev_N */
-  color: var(--color-blue-title);
+  color: var(--color-title);
 }
 
 h2 {
@@ -180,7 +159,7 @@ a.btn.btn_wrap {
   font-size: var(--size-cater);
   width: max-content;
   padding: 0.54rem 2.025rem;
-  box-shadow: 0 0 0 transparent;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.19);
   transform: scale(0.9);
   display: grid;
   place-items: center;
@@ -202,17 +181,18 @@ a.btn_link:hover {
   cursor: pointer;
   width: max-content;
   padding-bottom: 0.225rem;
-  color: var(--bg-aux-btn);
+  color: var(--highlight-text);
   letter-spacing: 3px;
   display: block;
 }
 
 a.btn_contact {
-  background-color: var(--bg-main-btn);
+  background-color: var(--highlight-text);
+  opacity: 0.94;
 }
 
 a.btn_contact:hover {
-  background-color: var(--bg-aux-btn);
+  background-color: transparent;
 }
 
 a.link_footer {

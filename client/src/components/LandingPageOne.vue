@@ -20,7 +20,7 @@ export default {
               Install Water Powering Devices For Your Building, on new Worldwide
               Standard
             </h1>
-            <h4 class="core_value_sub sp_tb_2">
+            <h4 class="core_value_sub sp_tb_2 font-light">
               Work with Real professional and get unique installation that take
               from the best norm in the world
             </h4>
@@ -122,9 +122,9 @@ export default {
     </div>
     <!-- trust -->
     <div class="trust_wrapper">
-      <div class="trust_cover w-full pb-[1.35rem] bg-[var(--color-accent-two)]">
+      <div class="trust_cover w-full pb-[1.35rem] bg-[var(--aux-background)]">
         <h2
-          class="trust_main_title w-full pt-[3.6rem] px-[3.7125rem] pb-[3.0375rem] mx-auto flex justify-center bg-[var(--color-accent-two)]"
+          class="trust_main_title w-full pt-[3.6rem] px-[3.7125rem] pb-[3.0375rem] mx-auto flex justify-center bg-[var(--aux-background)]"
         >
           Why Us ?
         </h2>
@@ -399,7 +399,7 @@ export default {
               class="holder_call_number inline-flex items-center justify-center break-words md:justify-end md:pl-[0.45rem] pt-[1.0125rem]"
             >
               <div
-                class="breathe_call_logo w-10 h-full bg-color-text-paragraph inline-block rounded-full mr-2"
+                class="breathe_call_logo w-10 h-full text-[var(--accent-color-three)] grid place-items-center rounded-full mr-2"
               >
                 <div class="breathe_icon_class flex justify-center">
                   <svg
@@ -416,7 +416,7 @@ export default {
                 </div>
               </div>
               <div
-                class="transition duration-300 ease-linear cursor-pointer hover:text-[var(--bg-aux-btn)]"
+                class="transition duration-300 ease-linear cursor-pointer hover:text-[var(--highlight-text)]"
               >
                 <h2>Tel : + 1 00-45-69-00-007</h2>
               </div>
@@ -722,14 +722,17 @@ export default {
   .testimonials_wrapper {
     width: 100%;
     height: auto;
-    background-color: rgba(207, 210, 212, 0.843);
-    color: rgb(41, 40, 43);
+    /*  background-color: rgba(207, 210, 212, 0.843);
+    color: rgb(41, 40, 43); */
+
+    background-color: var(--accent-color-two);
+    color: var(--primary-background);
   }
 
   .testimonials_main_title {
     width: 100%;
     padding-top: 2.7rem;
-    color: var(--navbar-background);
+    color: var(--aux-background);
     display: flex;
     justify-content: center;
   }
@@ -783,7 +786,7 @@ export default {
   }
 
   .testim_name {
-    color: var(--color-accent-one);
+    color: var(--aux-background);
   }
 
   /* <Service-Section> */
@@ -799,7 +802,7 @@ export default {
   }
 
   .service_icon {
-    color: var(--bg-aux-btn);
+    color: var(--highlight-text);
   }
 
   .service_card {
@@ -835,6 +838,7 @@ export default {
     height: 100%;
     background-color: rgb(0, 0, 0, 0.35);
   }
+
   .breathing_context {
     position: relative;
     top: 4.275rem;
@@ -869,7 +873,7 @@ export default {
   h1.farewell_value {
     --size-hero-title: calc(1.35rem + 0.15vw);
     line-height: 2.25rem;
-    color: var(--color-blue-title);
+    color: var(--color-title);
   }
 }
 
@@ -879,7 +883,7 @@ export default {
   }
 
   .sp_b_3 {
-    margin: 0 0 1.575rem 0;
+    margin: 1.0125rem 0 0.45rem 0;
   }
 
   .sp_tb_3 {
@@ -1069,13 +1073,15 @@ export default {
     padding: 1.8rem 1.35rem 1.35rem;
     margin: 0;
     background-color: rgb(0, 0, 0, 0.35);
+
+    /* background-color: var(--color-text); */
   }
 
   /* <Farewell-section> */
   h1.farewell_value {
     --size-hero-title: calc(2.6775rem + 0.15vw);
     line-height: 4.8375rem;
-    color: var(--color-blue-title);
+    color: var(--color-title);
   }
 }
 

@@ -69,7 +69,7 @@ export default {
           @click="async (el) => handleNavLinks(el, i)"
         >
           <div
-            class="holder_navlink inline-flex items-center justify-end tansition-all duration-300 ease-in-out hover:text-[var(--primary-color)]"
+            class="holder_navlink inline-flex items-center justify-end tansition-all duration-300 ease-in-out hover:text-[var(--accent-color-three)]"
           >
             <div
               class="nav_contact_logo w-5 h-full bg-color-text-paragraph inline-block rounded-full mr-2"
@@ -265,7 +265,7 @@ ul {
 }
 
 .logo_letter_color {
-  color: var(--accent-color-3);
+  color: var(--accent-color-three);
   margin: 0;
   padding: 0;
   letter-spacing: 0;
@@ -282,7 +282,7 @@ nav {
   position: fixed;
   top: 0;
   background-color: var(--navbar-background);
-  box-shadow: 0px 0px 3px var(--accent-color-2);
+  box-shadow: 0px 0px 3px var(--color-title);
   z-index: 25;
 }
 
@@ -306,8 +306,8 @@ div.nav_contact_logo.display_contact_logo {
   }
 
   .footer_container {
-    color: var(--background-main-content-1);
-    background-color: var(--background-footer);
+    color: var(--color-text);
+    background-color: var(--accent-color-one);
     font-family: "Source Sans 3", sans-serif;
     font-weight: 300;
   }
@@ -331,13 +331,13 @@ div.nav_contact_logo.display_contact_logo {
     font-family: "Source Sans 3", sans-serif;
     font-size: var(--size-regular);
     font-weight: 600;
-    color: var(--background-main-content-1);
+    color: var(--color-text);
     opacity: 0.9;
   }
 
   .navlink {
     font-size: var(--size-cater);
-    color: var(--background-main-content-2);
+    color: var(--color-text);
     font-weight: inherit;
     border-radius: 0;
     border: 1px solid transparent;
@@ -349,10 +349,10 @@ div.nav_contact_logo.display_contact_logo {
   }
 
   .navlink.active_navlink {
-    color: var(--primary-color);
+    color: var(--accent-color-three);
     font-weight: 600;
     border-radius: 5px;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--accent-color-three);
   }
 
   footer a {
