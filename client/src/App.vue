@@ -104,53 +104,63 @@ export default {
   <footer>
     <div class="footer_container w-full">
       <div
-        class="footer_resume w-full h-[500px] flex xxs:flex-col sm:flex-row items-center justify-between pt-40 px-10"
+        class="footer_resume w-full h-[400px] md:h-[500px] flex flex-col md:flex-row items-center justify-center md:justify-between pt-10 md:pt-40 px-5 md:px-5"
       >
-        <div class="footer_logo_brand self-start flex flex-row">
+        <div class="footer_logo_brand self-center md:self-start flex flex-row">
           <h2>DimiTr</h2>
           <h2 class="logo_letter_color">i</h2>
           <h2>o Cling</h2>
         </div>
-        <div class="footer_links w-8/12 self-start flex flex-row justify-start">
-          <div class="footer_space w-1/4 flex flex-col items-start gap-8">
+        <div
+          class="footer_links relative w-full md:w-8/12 self-center md:self-start flex flex-row justify-start pt-10 md:pt-0"
+        >
+          <div
+            class="footer_space w-1/4 flex flex-col items-center md:items-start gap-8"
+          >
             <h4 class="sub_links_title">Home</h4>
             <div
-              class="footer_expand_links w-full flex flex-col items-start gap-4"
+              class="footer_expand_links w-full flex flex-col items-center md:items-start gap-4"
             >
               <a class="link_footer">about me</a>
               <a class="link_footer">assistance</a>
               <a class="link_footer">learn more</a>
             </div>
           </div>
-          <div class="footer_space w-1/4 flex flex-col items-start gap-8">
+          <div
+            class="footer_space w-1/4 flex flex-col items-center md:items-start gap-8"
+          >
             <h4 class="sub_links_title">Expertise</h4>
             <div
-              class="footer_expand_links w-full flex flex-col items-start gap-4"
+              class="footer_expand_links w-full flex flex-col items-center md:items-start gap-4"
             >
               <a class="link_footer">quotation</a>
               <a class="link_footer">advisory equipments</a>
               <a class="link_footer">water plan drawings</a>
             </div>
           </div>
-          <div class="footer_space w-1/4 flex flex-col items-start gap-8">
+          <div
+            class="footer_space w-1/4 flex flex-col items-center md:items-start gap-8"
+          >
             <h4 class="sub_links_title">Services</h4>
             <div
-              class="footer_expand_links w-full flex flex-col items-start gap-4"
+              class="footer_expand_links w-full flex flex-col items-center md:items-start gap-4"
             >
               <a class="link_footer">repairments</a>
               <a class="link_footer">new installation</a>
               <a class="link_footer">renovation</a>
             </div>
           </div>
-          <div class="footer_space w-1/4 flex flex-col items-start gap-8">
+          <div
+            class="footer_space w-1/4 flex flex-col items-center md:items-start gap-8"
+          >
             <h4 class="sub_links_title">Contact</h4>
             <div
-              class="footer_expand_links w-full flex flex-col items-start gap-4"
+              class="footer_expand_links w-full flex flex-col items-center md:items-start gap-4"
             >
               <a class="link_footer">xyzdimitrio@gmail.com</a>
               <a class="link_footer">learn more</a>
               <div
-                class="social_media px-[0.5em] py-2 w-full flex flex-row items-center gap-5"
+                class="social_media px-[0.5em] py-1 md:py-2 w-full flex flex-row justify-center md:justify-start items-center gap-5"
               >
                 <i id="facebook" class="media">
                   <svg
@@ -193,10 +203,10 @@ export default {
                 </i>
               </div>
               <div
-                class="adress_tel w-full flex flex-col items-center sm:items-start gap-1"
+                class="adress_tel absolute top-58 md:top-0 right-4 md:right-0 md:relative w-full flex flex-row justify-end md:justify-start md:flex-col items-center md:items-start gap-1"
               >
                 <div
-                  class="footer_contact_label w-40 m-0 p-0 flex flex-row items-center"
+                  class="footer_contact_label w-max md:w-40 m-0 p-0 flex flex-row justify-center items-center"
                 >
                   <p>
                     <svg
@@ -211,10 +221,12 @@ export default {
                       />
                     </svg>
                   </p>
-                  <p class="mx-1 w-full pb-[0.45rem]">Contact us</p>
+                  <p class="mx-1 w-max md:w-full footer_contact_title">
+                    Contact us
+                  </p>
                 </div>
                 <p
-                  class="footer_contact_number w-full pl-2 pb-4 -mt-1 break-words"
+                  class="footer_contact_number w-max md:w-full flex flex-row items-center md:items-start pl-2 md:pb-4 md:-mt-1 break-words"
                 >
                   + 1 00-45-69-00-007 / + 1 00-53-72-40-408
                 </p>
@@ -224,7 +236,7 @@ export default {
         </div>
       </div>
       <div class="footer_terms_use w-full p-5 flex flex-row justify-between">
-        <div class="w-40 flex gap-2">
+        <div class="w-max md:w-40 flex gap-2">
           <p class="logo_copyright">&copy;</p>
           <p>Dimitrio Cling</p>
         </div>
@@ -283,12 +295,38 @@ div.nav_contact_logo.display_contact_logo {
 }
 
 @media (min-width: 9.9rem) {
+  footer a {
+    line-height: 32px;
+    font-size: var(--size-sm);
+  }
+
+  .footer_contact_number,
+  .footer_contact_title {
+    font-size: var(--size-sm);
+  }
+
+  .footer_container {
+    color: var(--background-main-content-1);
+    background-color: var(--background-footer);
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 300;
+  }
+
+  .footer_logo_brand {
+    padding: 1rem 1rem;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: var(--size-h4);
+    letter-spacing: 2px;
+    opacity: 0.85;
+  }
+
   .footer_terms_use p.logo_copyright {
     width: 40%;
   }
 }
 
-@media (min-width: 28rem) {
+@media (min-width: 47.925rem) {
   .logo_brand {
     font-family: "Source Sans 3", sans-serif;
     font-size: var(--size-regular);
@@ -323,20 +361,19 @@ div.nav_contact_logo.display_contact_logo {
   }
 
   .footer_container {
-    color: var(--background-main-content-1);
-    background-color: var(--background-footer);
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 300;
     padding-right: 1.125rem;
   }
 
   .footer_logo_brand {
     padding: 2rem 2rem 1rem;
     font-family: "Source Sans 3", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    letter-spacing: 2px;
+    font-size: var(--size-h3);
     opacity: 0.85;
+  }
+
+  .footer_contact_number,
+  .footer_contact_title {
+    font-size: var(--size-regular);
   }
 
   .footer_links .adress_tel {

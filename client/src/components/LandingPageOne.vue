@@ -927,7 +927,7 @@ export default {
   /* <Mission-Section> */
   .mission_wrapper,
   .reinforcement_wrapper {
-    height: 43.65rem;
+    height: 37.575rem;
     padding: 8.55rem 0 4.05rem;
   }
 
