@@ -550,6 +550,7 @@ export default {
     width: 100%;
     height: 110vh;
     padding: 3.6rem 0 3.15rem;
+    /*  padding: 0 0 3.15rem; */
     margin: 0;
     background: linear-gradient(
       97.39deg,

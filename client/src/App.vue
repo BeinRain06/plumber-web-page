@@ -17,6 +17,12 @@ export default {
 
     const currentLinkLogo = ref(null);
 
+    const checkMenuRef = ref(null);
+
+    const middleBarRef = ref(null);
+
+    const modalMenuRef = ref(null);
+
     const setElementsLinkRef = (el, i) => {
       if (el) {
         navlinks.value[i].ref = el;
@@ -29,6 +35,17 @@ export default {
       }
       currentActiveLink.value = await navlinks.value[i].ref;
       currentActiveLink.value?.classList.add("active_navlink");
+    };
+
+    const handleMenu = (e) => {
+      console.log("checkMenuRef:", checkMenuRef);
+      if (!checkMenuRef.value.checked) {
+        middleBarRef.value.classList.add("active_menu");
+        modalMenuRef.value.classList.add("active_menu");
+      } else {
+        middleBarRef.value.classList.remove("active_menu");
+        modalMenuRef.value.classList.remove("active_menu");
+      }
     };
 
     onMounted(() => {
@@ -44,8 +61,12 @@ export default {
 
     return {
       navlinks,
+      checkMenuRef,
+      middleBarRef,
+      modalMenuRef,
       setElementsLinkRef,
       handleNavLinks,
+      handleMenu,
     };
   },
 };
@@ -53,13 +74,15 @@ export default {
 
 <template>
   <header>
-    <nav class="w-full flex justify-between py-5 px-10">
-      <div class="logo_brand">
+    <nav
+      class="w-full flex justify-between h-16 pl-6 pr-8 sm:h-auto sm:py-5 sm:px-10"
+    >
+      <div class="logo_brand w-max">
         <h3>DimiTr</h3>
         <h3 class="logo_letter_color">i</h3>
         <h3>o Cling</h3>
       </div>
-      <ul class="flex space-x-6">
+      <ul class="navlink_desktop hidden sm:flex space-x-6">
         <li
           class="navlink"
           :key="item.id"
@@ -94,6 +117,72 @@ export default {
           </div>
         </li>
       </ul>
+      <!-- Menu Mobile -->
+      <div class="menu_wrap block sm:hidden">
+        <div
+          class="menu_content relative w-8 h-8 flex justify-center items-center rounded border border-solid border-[var(--color-text)]"
+        >
+          <div
+            class="middle_bar relative h-[1px] w-[72%] bg-[var(--color-text)] z-0"
+            ref="middleBarRef"
+          ></div>
+          <div
+            class="input_check_wrap absolute w-4/5 h-4/5 opacity-0 mx-auto z-10"
+            @click="handleMenu"
+          >
+            <input
+              type="checkbox"
+              name="checkbox"
+              class="check_menu w-full h-full rounded cursor-pointer"
+              ref="checkMenuRef"
+            />
+          </div>
+        </div>
+        <div class="modal_menu" ref="modalMenuRef">
+          <div class="modal_close w-full">
+            <div
+              class="icon_menu_close w-full h-6 cursor-pointer flex flex-row justify-end"
+            >
+              x
+            </div>
+          </div>
+          <ul class="modal_menu_links flex flex-col space-y-6">
+            <li
+              class="modal_menu_link"
+              :key="item.id"
+              :id="item.id"
+              v-for="(item, i) in navlinks"
+              :ref="(el) => setElementsLinkRef(el, i)"
+              @click="async (el) => handleNavLinks(el, i)"
+            >
+              <div
+                class="holder_navlink inline-flex items-center justify-end tansition-all duration-300 ease-in-out hover:text-[var(--accent-color-three)]"
+              >
+                <div
+                  class="nav_contact_logo w-5 h-full bg-color-text-paragraph inline-block rounded-full mr-2"
+                >
+                  <p class="nav_off_p_class">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M16 11V8h-3V7h3V4h1v3h3v1h-3v3zm2.93 9q-2.528 0-5.184-1.266t-4.935-3.555t-3.545-4.935T4 5.07q0-.458.3-.763T5.05 4h2.473q.408 0 .712.257t.411.659L9.142 7.3q.07.42-.025.733t-.333.513L6.59 10.592q.616 1.117 1.361 2.076t1.59 1.817q.87.87 1.874 1.62q1.004.749 2.204 1.414l2.139-2.177q.244-.263.549-.347q.304-.083.674-.033l2.103.43q.408.1.662.411t.254.712v2.435q0 .45-.306.75t-.763.3M6.12 9.654l1.92-1.765q.095-.077.124-.212q.03-.135-.01-.25l-.443-2.12q-.039-.153-.135-.23T7.327 5H5.275q-.115 0-.192.077t-.077.192q.029 1.025.321 2.14t.794 2.245m8.45 8.334q1.014.502 2.16.743q1.148.24 2 .257q.115 0 .192-.077T19 18.72v-2.008q0-.153-.077-.25q-.077-.096-.23-.134l-1.85-.379q-.116-.039-.203-.01q-.086.03-.182.125zm0 0"
+                      />
+                    </svg>
+                  </p>
+                </div>
+                <div>
+                  <p class="nav_p_link">{{ item.label }}</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
@@ -280,7 +369,8 @@ h4.sub_links_title {
 
 nav {
   position: fixed;
-  top: 0;
+  top: 16px;
+  left: 0;
   background-color: var(--navbar-background);
   box-shadow: 0px 0px 3px var(--color-title);
   z-index: 25;
@@ -295,6 +385,27 @@ div.nav_contact_logo.display_contact_logo {
 }
 
 @media (min-width: 9.9rem) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--navbar-background);
+    box-shadow: 0px 0px 3px var(--color-title);
+    border-top: 4px solid transparent;
+    z-index: 25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo_brand h3:not(.logo_letter_color) {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: var(--size-h4);
+    font-weight: 600;
+    color: var(--color-text);
+    opacity: 0.9;
+  }
+
   footer a {
     line-height: 32px;
     font-size: var(--size-sm);
@@ -324,15 +435,102 @@ div.nav_contact_logo.display_contact_logo {
   .footer_terms_use p.logo_copyright {
     width: 40%;
   }
+
+  /* Menu Mobile */
+
+  .middle_bar {
+    transition: all 1s ease;
+  }
+
+  .middle_bar::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text);
+    transition: all 1s ease;
+  }
+
+  .middle_bar::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text);
+    transition: all 1s ease;
+  }
+
+  .input_check_wrap {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* activate menu */
+
+  .middle_bar.active_menu {
+    transform: rotate(135deg);
+  }
+
+  .middle_bar.active_menu::before {
+    top: 0;
+    /* transform: rotate(45deg); */
+    transform: rotate(90deg);
+  }
+
+  .middle_bar.active_menu::after {
+    top: 0;
+    /* transform: rotate(135deg); */
+    transform: rotate(90deg);
+  }
+
+  .modal_menu {
+    position: absolute;
+    top: 3.8rem;
+    left: 0;
+    transform: scale(0.45) translateX(-50%);
+    width: max(260px, 80%);
+    height: max-content;
+    padding: 1.125rem 0.9rem;
+    color: var(--navbar-background);
+    background-color: var(--color-text);
+    visibility: invisible;
+    opacity: 0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 310ms linear;
+  }
+
+  .modal_menu.active_menu {
+    position: absolute;
+    top: 3.8rem;
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+    width: max(260px, 80%);
+    height: max-content;
+    padding: 1.125rem 0.9rem;
+    visibility: visible;
+    opacity: 0.99;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 300ms linear;
+  }
 }
 
 @media (min-width: 47.925rem) {
-  .logo_brand {
+  .logo_brand h3 {
     font-family: "Source Sans 3", sans-serif;
-    font-size: var(--size-regular);
-    font-weight: 600;
-    color: var(--color-text);
-    opacity: 0.9;
+    font-size: var(--size-h3);
   }
 
   .navlink {

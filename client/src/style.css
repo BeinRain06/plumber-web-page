@@ -54,11 +54,10 @@ body {
   margin: 0 auto;
   color: var(--color-text);
   background-color: var(--primary-background);
-
   font-size: var(--size-regular);
   /* base-evolution number Ev_N = 1.125/5 = 0.225rem */
   line-height: 1.5;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: "Roboto Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
